@@ -1,0 +1,10 @@
+C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\bin\Debug\Pimbeck.exe.config
+C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\bin\Debug\Pimbeck.exe
+C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\bin\Debug\Pimbeck.pdb
+C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\obj\Debug\Pimbeck.csprojAssemblyReference.cache
+C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\obj\Debug\Pimbeck.Properties.Resources.resources
+C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\obj\Debug\Pimbeck.csproj.GenerateResource.cache
+C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\obj\Debug\Pimbeck.csproj.CoreCompileInputs.cache
+C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\obj\Debug\Pimbeck.exe
+C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\obj\Debug\Pimbeck.pdb
+C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\obj\Debug\Pimbeck.Form1.resources
