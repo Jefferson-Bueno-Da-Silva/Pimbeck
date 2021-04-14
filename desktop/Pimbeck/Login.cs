@@ -62,6 +62,11 @@ namespace Pimbeck
             System.Windows.Forms.Application.Exit();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             offset.X = e.X;
