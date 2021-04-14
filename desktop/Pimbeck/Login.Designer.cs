@@ -1,7 +1,7 @@
 ﻿
 namespace Pimbeck
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -31,13 +31,13 @@ namespace Pimbeck
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Login";
+            this.Text = "Login - Pimbeck";
             this.ResumeLayout(false);
 
         }

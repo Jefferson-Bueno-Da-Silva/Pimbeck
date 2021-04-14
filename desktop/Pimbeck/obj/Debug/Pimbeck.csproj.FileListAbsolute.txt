@@ -7,4 +7,4 @@ C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\obj\Debug\Pimbeck.csproj.GenerateResou
 C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\obj\Debug\Pimbeck.csproj.CoreCompileInputs.cache
 C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\obj\Debug\Pimbeck.exe
 C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\obj\Debug\Pimbeck.pdb
-C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\obj\Debug\Pimbeck.Form1.resources
+C:\Users\jeffe\C#\Pimbeck\desktop\Pimbeck\obj\Debug\Pimbeck.Login.resources
