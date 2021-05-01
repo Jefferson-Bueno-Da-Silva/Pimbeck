@@ -21,40 +21,40 @@ namespace Pimbeck
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
-            if(textBox1.Text == "")
+            if(name.Text == "")
             {
-                textBox1.Text = "Email";
+                name.Text = "Email";
             }
-            textBox1.ForeColor = Color.DarkGray;
+            name.ForeColor = Color.DarkGray;
         }
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
-            if (textBox1.Text == "Email")
+            if (name.Text == "Email")
             {
-                textBox1.Text = null;
+                name.Text = null;
             }
-            textBox1.ForeColor = Color.Black;
+            name.ForeColor = Color.Black;
         }
 
         private void textBox2_Leave(object sender, EventArgs e)
         {
-            if (textBox2.Text == "")
+            if (pass.Text == "")
             {
-                textBox2.Text = "Senha";
-                this.textBox2.UseSystemPasswordChar = false;
+                pass.Text = "Senha";
+                this.pass.UseSystemPasswordChar = false;
             }
-            textBox2.ForeColor = Color.DarkGray;
+            pass.ForeColor = Color.DarkGray;
         }
 
         private void textBox2_Enter(object sender, EventArgs e)
         {
-            if (textBox2.Text == "Senha")
+            if (pass.Text == "Senha")
             {
-                textBox2.Text = null;
-                this.textBox2.UseSystemPasswordChar = true;
+                pass.Text = null;
+                this.pass.UseSystemPasswordChar = true;
             }
-            textBox2.ForeColor = Color.Black;
+            pass.ForeColor = Color.Black;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -87,6 +87,21 @@ namespace Pimbeck
         private void panel1_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
