@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pimbeck;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Recepcao
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Recepcao());
+            Application.Run( new Login() );
         }
     }
 }

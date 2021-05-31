@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Recepcao;
 
 namespace Pimbeck
 {
@@ -102,6 +103,13 @@ namespace Pimbeck
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Entrar_Click(object sender, EventArgs e)
+        {
+            Recepcao.Recepcao recepcao = new Recepcao.Recepcao();
+            recepcao.Show();
+            this.Hide();
         }
     }
 }

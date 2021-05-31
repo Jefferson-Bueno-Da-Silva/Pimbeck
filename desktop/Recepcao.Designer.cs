@@ -74,6 +74,7 @@ namespace Recepcao
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             DocumentosBtn = new System.Windows.Forms.Button();
             this.MenuPanel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -112,6 +113,7 @@ namespace Recepcao
             // MenuPanel
             // 
             this.MenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.MenuPanel.Controls.Add(this.button1);
             this.MenuPanel.Controls.Add(this.MarketingBtn);
             this.MenuPanel.Controls.Add(this.AlmoxarifadoBtn);
             this.MenuPanel.Controls.Add(DocumentosBtn);
@@ -296,7 +298,7 @@ namespace Recepcao
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(236, 86);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(150, 81);
             this.panel2.TabIndex = 12;
@@ -329,7 +331,7 @@ namespace Recepcao
             this.panel4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel4.Controls.Add(this.label2);
             this.panel4.Location = new System.Drawing.Point(236, 86);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(150, 25);
             this.panel4.TabIndex = 0;
@@ -351,7 +353,7 @@ namespace Recepcao
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(413, 86);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(150, 25);
             this.panel3.TabIndex = 13;
@@ -373,7 +375,7 @@ namespace Recepcao
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(413, 86);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(150, 81);
             this.panel5.TabIndex = 14;
@@ -394,7 +396,7 @@ namespace Recepcao
             this.panel6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel6.Controls.Add(this.label6);
             this.panel6.Location = new System.Drawing.Point(587, 86);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(150, 25);
             this.panel6.TabIndex = 15;
@@ -415,7 +417,7 @@ namespace Recepcao
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.panel7.Controls.Add(this.label7);
             this.panel7.Location = new System.Drawing.Point(587, 86);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(150, 81);
             this.panel7.TabIndex = 16;
@@ -436,7 +438,7 @@ namespace Recepcao
             this.panel8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel8.Controls.Add(this.label8);
             this.panel8.Location = new System.Drawing.Point(236, 189);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(150, 25);
             this.panel8.TabIndex = 17;
@@ -457,7 +459,7 @@ namespace Recepcao
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.panel9.Controls.Add(this.label9);
             this.panel9.Location = new System.Drawing.Point(236, 189);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(150, 81);
             this.panel9.TabIndex = 18;
@@ -478,7 +480,7 @@ namespace Recepcao
             this.panel10.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel10.Controls.Add(this.label10);
             this.panel10.Location = new System.Drawing.Point(413, 189);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(150, 25);
             this.panel10.TabIndex = 15;
@@ -499,7 +501,7 @@ namespace Recepcao
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.panel11.Controls.Add(this.label11);
             this.panel11.Location = new System.Drawing.Point(413, 189);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(150, 81);
             this.panel11.TabIndex = 16;
@@ -520,7 +522,7 @@ namespace Recepcao
             this.panel12.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel12.Controls.Add(this.label12);
             this.panel12.Location = new System.Drawing.Point(587, 189);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(150, 25);
             this.panel12.TabIndex = 19;
@@ -541,7 +543,7 @@ namespace Recepcao
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.panel13.Controls.Add(this.label13);
             this.panel13.Location = new System.Drawing.Point(587, 189);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel13.Margin = new System.Windows.Forms.Padding(2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(150, 81);
             this.panel13.TabIndex = 20;
@@ -562,7 +564,7 @@ namespace Recepcao
             this.panel14.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel14.Controls.Add(this.label14);
             this.panel14.Location = new System.Drawing.Point(236, 293);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(501, 26);
             this.panel14.TabIndex = 19;
@@ -583,7 +585,7 @@ namespace Recepcao
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.panel15.Location = new System.Drawing.Point(236, 293);
-            this.panel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel15.Margin = new System.Windows.Forms.Padding(2);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(501, 238);
             this.panel15.TabIndex = 20;
@@ -593,7 +595,7 @@ namespace Recepcao
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.panel16.Controls.Add(this.label15);
             this.panel16.Location = new System.Drawing.Point(764, 86);
-            this.panel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel16.Margin = new System.Windows.Forms.Padding(2);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(178, 445);
             this.panel16.TabIndex = 21;
@@ -608,6 +610,22 @@ namespace Recepcao
             this.label15.Size = new System.Drawing.Size(74, 17);
             this.label15.TabIndex = 3;
             this.label15.Text = "Calendario";
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 476);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(197, 35);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Sair";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Recepcao
             // 
@@ -633,7 +651,7 @@ namespace Recepcao
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.MenuPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Recepcao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -721,6 +739,7 @@ namespace Recepcao
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button1;
     }
 }
 

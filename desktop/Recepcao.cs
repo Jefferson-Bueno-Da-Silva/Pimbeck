@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pimbeck;
+using System;
 using System.Windows.Forms;
 
 namespace Recepcao
@@ -17,7 +18,6 @@ namespace Recepcao
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Funcionarios func = new Funcionarios();
             func.Show();
         }
@@ -69,9 +69,15 @@ namespace Recepcao
 
         private void ClientesBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Clientes clientes = new Clientes();
             clientes.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
     }
 }
