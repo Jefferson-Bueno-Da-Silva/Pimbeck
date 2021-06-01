@@ -14,5 +14,10 @@ namespace desktopv2
         {
             InitializeComponent();
         }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
