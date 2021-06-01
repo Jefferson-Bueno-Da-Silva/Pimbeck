@@ -17,19 +17,16 @@ namespace Recepcao
             InitializeComponent();
         }
 
-        private void H1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label32_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void AddEmployee_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void moveToBack_Click(object sender, EventArgs e)
+        {
+            Recepcao Recepcao = new Recepcao();
+            Recepcao.Show();
+            this.Close();
         }
     }
 }

@@ -17,38 +17,11 @@ namespace Recepcao
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void moveToBack_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FuncionariosBtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Funcionarios func = new Funcionarios();
-            func.Show();
-        }
-
-        private void RecepcaoBtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
             Recepcao Recepcao = new Recepcao();
             Recepcao.Show();
+            this.Close();
         }
     }
 }

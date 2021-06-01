@@ -117,44 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="AddEmployee.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAARxJREFUOE/dVFsRgzAQjAQeBioBCUipg+IAHCCBOqiESqgEJCCh3c1sGBISAr/d
-        mZ0299hcckdMiAKoqqoHF/ALfuq6vst9HRSQUMheISu4eVmWb/hGmXywkkDEI/IbhVpg3co3y+QDgtxt
-        J7RhxzhWhv8TqnvJzuuZwIcVcoBhVkCKE+M2le1ohRw2O6ZoKyQg2mHNqmhnhQNsfvNoUECU8N8UaoF1
-        I1/8Dgk4n04g4KCQFRBkl3mqtfIoWKkaNHMssG7l+kfweDgqu8cRskfG7wi715AsmKDkWEMcd59fFBRD
-        cG6oHe1wH4JBQVKO6THRncWSjrggr5CEDzivVmeZfCPhTL1/OcbvMhJ4ipwISfg48QamuPu2jTHmB5oE
-        5wkbGlTxAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <metadata name="Cod.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="address.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Cod.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="address.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="moveToBack.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH5QUZCjgn0K47sgAAANxJREFU
-        WEftlzEKwkAQRaOgnZ5F8BBaWngKUY8idlaCNxDPIF7IXtc3ywhChk2zY5p58Kt89n0IbEhTm5TSkBzI
-        k9zIVB/5o/Iz+eVBxlrxA4kl/7LWmg8ISvI3mWu1PhzeJd9ptT4cPiAnMRmIfK/V+nB4yC1C7gOHh9zC
-        Vy4g6OeGExAssqqNv1xAssy6NjJgozU/kMj7v4jR4G8j5EtXGrHVqh9IYkQGSYzIIIkRGSQxIoOka0Tv
-        N+aLzLTqB5LSiJXWfEFkjbiTkVb8QSYjjkR+z69koo8MmuYDOZr4XyqUQigAAAAASUVORK5CYII=
-</value>
-  </data>
 </root>
