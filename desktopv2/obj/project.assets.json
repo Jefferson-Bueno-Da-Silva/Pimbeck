@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jeffe\\C#\\desktopv2\\desktopv2.csproj",
+      "projectUniqueName": "C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\desktopv2.csproj",
       "projectName": "desktopv2",
-      "projectPath": "C:\\Users\\jeffe\\C#\\desktopv2\\desktopv2.csproj",
+      "projectPath": "C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\desktopv2.csproj",
       "packagesPath": "C:\\Users\\jeffe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jeffe\\C#\\desktopv2\\obj\\",
+      "outputPath": "C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
