@@ -32,22 +32,7 @@ namespace Recepcao
 
         }
 
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void Recepcao_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
         {
 
         }
@@ -58,11 +43,6 @@ namespace Recepcao
         }
 
         private void RecepcaoBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
         {
 
         }

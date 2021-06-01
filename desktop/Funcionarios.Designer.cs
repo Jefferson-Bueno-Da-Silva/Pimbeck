@@ -31,14 +31,14 @@ namespace Recepcao
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Funcionarios));
             this.H1 = new System.Windows.Forms.Label();
-            this.moveToBack = new System.Windows.Forms.PictureBox();
             this.AddEmployee = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).BeginInit();
+            this.moveToBack = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).BeginInit();
             this.SuspendLayout();
             // 
             // H1
@@ -52,19 +52,6 @@ namespace Recepcao
             this.H1.TabIndex = 4;
             this.H1.Text = "Funcionarios";
             this.H1.Click += new System.EventHandler(this.H1_Click);
-            // 
-            // moveToBack
-            // 
-            this.moveToBack.BackColor = System.Drawing.Color.Transparent;
-            this.moveToBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("moveToBack.BackgroundImage")));
-            this.moveToBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.moveToBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.moveToBack.Location = new System.Drawing.Point(15, 15);
-            this.moveToBack.Name = "moveToBack";
-            this.moveToBack.Size = new System.Drawing.Size(50, 50);
-            this.moveToBack.TabIndex = 5;
-            this.moveToBack.TabStop = false;
-            this.moveToBack.Click += new System.EventHandler(this.moveToBack_Click);
             // 
             // AddEmployee
             // 
@@ -116,6 +103,19 @@ namespace Recepcao
             this.address.HeaderText = "Endereço";
             this.address.Name = "address";
             // 
+            // moveToBack
+            // 
+            this.moveToBack.BackColor = System.Drawing.Color.Transparent;
+            this.moveToBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("moveToBack.BackgroundImage")));
+            this.moveToBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.moveToBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.moveToBack.Location = new System.Drawing.Point(15, 15);
+            this.moveToBack.Name = "moveToBack";
+            this.moveToBack.Size = new System.Drawing.Size(50, 50);
+            this.moveToBack.TabIndex = 5;
+            this.moveToBack.TabStop = false;
+            this.moveToBack.Click += new System.EventHandler(this.moveToBack_Click);
+            // 
             // Funcionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,8 +131,8 @@ namespace Recepcao
             this.Name = "Funcionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,11 +140,11 @@ namespace Recepcao
 
         #endregion
         private System.Windows.Forms.Label H1;
-        private System.Windows.Forms.PictureBox moveToBack;
         private System.Windows.Forms.Button AddEmployee;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cod;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn address;
+        private System.Windows.Forms.PictureBox moveToBack;
     }
 }

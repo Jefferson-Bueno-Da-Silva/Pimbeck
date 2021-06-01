@@ -32,6 +32,7 @@ namespace Recepcao
             System.Windows.Forms.Button DocumentosBtn;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Recepcao));
             this.MenuPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.MarketingBtn = new System.Windows.Forms.Button();
             this.AlmoxarifadoBtn = new System.Windows.Forms.Button();
             this.FinanceiroBtn = new System.Windows.Forms.Button();
@@ -74,7 +75,6 @@ namespace Recepcao
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             DocumentosBtn = new System.Windows.Forms.Button();
             this.MenuPanel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -129,6 +129,22 @@ namespace Recepcao
             this.MenuPanel.Name = "MenuPanel";
             this.MenuPanel.Size = new System.Drawing.Size(200, 585);
             this.MenuPanel.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 476);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(197, 35);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Sair";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MarketingBtn
             // 
@@ -324,7 +340,6 @@ namespace Recepcao
             this.H1.Size = new System.Drawing.Size(123, 32);
             this.H1.TabIndex = 3;
             this.H1.Text = "Recepção";
-            this.H1.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // panel4
             // 
@@ -346,7 +361,6 @@ namespace Recepcao
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Saidas";
-            this.label2.Click += new System.EventHandler(this.label2_Click_2);
             // 
             // panel3
             // 
@@ -368,7 +382,6 @@ namespace Recepcao
             this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Entradas";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // panel5
             // 
@@ -579,7 +592,6 @@ namespace Recepcao
             this.label14.Size = new System.Drawing.Size(167, 13);
             this.label14.TabIndex = 3;
             this.label14.Text = "Alguma Tabela com Informação";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // panel15
             // 
@@ -610,22 +622,6 @@ namespace Recepcao
             this.label15.Size = new System.Drawing.Size(74, 17);
             this.label15.TabIndex = 3;
             this.label15.Text = "Calendario";
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 476);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 35);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Sair";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Recepcao
             // 
