@@ -1,6 +1,19 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+    "C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\desktopv2.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\desktopv2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\desktopv2.csproj",
+        "projectName": "desktopv2",
+        "projectPath": "C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\desktopv2.csproj",
+        "packagesPath": "C:\\Users\\jeffe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\obj\\",
+=======
     "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj": {}
   },
   "projects": {
@@ -12,6 +25,7 @@
         "projectPath": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\obj\\",
+>>>>>>> master
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
