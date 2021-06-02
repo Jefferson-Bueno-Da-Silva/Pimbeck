@@ -13,6 +13,9 @@
     <Compile Update="Financeiro.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Funcionario adicionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Funcionarios.cs">
       <SubType>Form</SubType>
     </Compile>
