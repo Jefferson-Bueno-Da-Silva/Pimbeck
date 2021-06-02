@@ -1,0 +1,15 @@
+C:\Users\jeffe\C#\desktopv2\bin\Debug\netcoreapp3.1\desktopv2.exe
+C:\Users\jeffe\C#\desktopv2\bin\Debug\netcoreapp3.1\desktopv2.deps.json
+C:\Users\jeffe\C#\desktopv2\bin\Debug\netcoreapp3.1\desktopv2.runtimeconfig.json
+C:\Users\jeffe\C#\desktopv2\bin\Debug\netcoreapp3.1\desktopv2.runtimeconfig.dev.json
+C:\Users\jeffe\C#\desktopv2\bin\Debug\netcoreapp3.1\desktopv2.dll
+C:\Users\jeffe\C#\desktopv2\bin\Debug\netcoreapp3.1\desktopv2.pdb
+C:\Users\jeffe\C#\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.csprojAssemblyReference.cache
+C:\Users\jeffe\C#\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.login.resources
+C:\Users\jeffe\C#\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.csproj.GenerateResource.cache
+C:\Users\jeffe\C#\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.AssemblyInfoInputs.cache
+C:\Users\jeffe\C#\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.AssemblyInfo.cs
+C:\Users\jeffe\C#\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.csproj.CoreCompileInputs.cache
+C:\Users\jeffe\C#\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.dll
+C:\Users\jeffe\C#\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.pdb
+C:\Users\jeffe\C#\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.genruntimeconfig.cache
