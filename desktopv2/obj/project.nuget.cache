@@ -4,5 +4,12 @@
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
