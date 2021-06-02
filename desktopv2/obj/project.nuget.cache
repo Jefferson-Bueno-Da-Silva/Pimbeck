@@ -1,15 +1,25 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "PyW/9TuRwy5pisvPfojqIWEVao/vnmZNSosyZl4ZgVpVHaftON+lgbSFVHZ9pgBQ+fj98tfS9O83SR7PT1zo8A==",
   "success": true,
   "projectFilePath": "C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\desktopv2.csproj",
+=======
+  "dgSpecHash": "O3Z9/SIjz1Nf8rdCTKuUekkZOxHf2zkMlQDKhwM50Pb4MiCM1sE6OIxLWqeqVN1sFWx4jE5lV64qxFiECyRxCA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj",
+>>>>>>> master
   "expectedPackageFiles": [],
   "logs": [
     {
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
       "message": "Problema ao ler o arquivo de cache C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
+      "message": "Problem reading the cache file C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> master
     }
   ]
 }
