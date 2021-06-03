@@ -246,6 +246,7 @@ namespace desktopv2
             this.FuncionariosBtn.TabIndex = 5;
             this.FuncionariosBtn.Text = "Funcionarios";
             this.FuncionariosBtn.UseVisualStyleBackColor = true;
+            this.FuncionariosBtn.Click += new System.EventHandler(this.FuncionariosBtn_Click);
             // 
             // RecepcaoBtn
             // 

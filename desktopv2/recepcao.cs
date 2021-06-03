@@ -13,6 +13,7 @@ namespace desktopv2
         int X = 0;
         int Y = 0;
         TopPage page = new TopPage();
+
         public recepcao()
         {
             InitializeComponent();
@@ -34,11 +35,10 @@ namespace desktopv2
             this.Top = Y + MousePosition.Y;
         }
 
-        private void close_Click(object sender, EventArgs e){
-            page.CloseClick();
-        }
+        private void close_Click(object sender, EventArgs e) => page.CloseClick();
 
         private void minimize_Click(object sender, EventArgs e) => page.MinimizeClick(this);
-        
+
+        private void FuncionariosBtn_Click(object sender, EventArgs e) => new Funcionarios().Show();
     }
 }
