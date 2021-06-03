@@ -10,44 +10,52 @@ namespace desktopv2
 {
     public partial class ReservaAdicionar : Form
     {
+        int X = 0;
+        int Y = 0;
         public ReservaAdicionar()
         {
             InitializeComponent();
+            this.MouseDown += new MouseEventHandler(panel17_MouseDown);
+            this.MouseMove += new MouseEventHandler(panel17_MouseMove);
         }
 
-        private void label10_Click(object sender, EventArgs e)
+        private void panel17_MouseDown(object sender, MouseEventArgs e)
         {
-
+            if (e.Button != MouseButtons.Left) return;
+            X = this.Left - MousePosition.X;
+            Y = this.Top - MousePosition.Y;
         }
 
-        private void textBox8_TextChanged(object sender, EventArgs e)
+        private void panel17_MouseMove(object sender, MouseEventArgs e)
         {
-
+            if (e.Button != MouseButtons.Left) return;
+            this.Left = X + MousePosition.X;
+            this.Top = Y + MousePosition.Y;
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void moveToBack_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        private void AddEmployee_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
+            DialogResult result = MessageBox.Show(
+                "Tem certeza que deseja realizar esta operação ?",
+                "Tem certeza ?",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show(
+                    "Operação realizaca com sucesso!",
+                    "Sucesso!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+                this.Close();
+            }
         }
     }
 }
