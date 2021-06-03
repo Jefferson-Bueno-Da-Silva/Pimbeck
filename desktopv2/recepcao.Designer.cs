@@ -113,6 +113,7 @@ namespace desktopv2
             this.DocumentosBtn.TabIndex = 9;
             this.DocumentosBtn.Text = "Documentos";
             this.DocumentosBtn.UseVisualStyleBackColor = true;
+            this.DocumentosBtn.Click += new System.EventHandler(this.DocumentosBtn_Click);
             // 
             // MenuPanel
             // 

@@ -32,10 +32,11 @@ namespace desktopv2
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DocumentosFiscais));
             this.H1 = new System.Windows.Forms.Label();
             this.moveToBack = new System.Windows.Forms.PictureBox();
-            this.NFe = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,13 +45,12 @@ namespace desktopv2
             this.H1.AutoSize = true;
             this.H1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.H1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.H1.Location = new System.Drawing.Point(65, 39);
+            this.H1.Location = new System.Drawing.Point(57, 29);
             this.H1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.H1.Name = "H1";
-            this.H1.Size = new System.Drawing.Size(288, 41);
+            this.H1.Size = new System.Drawing.Size(236, 32);
             this.H1.TabIndex = 4;
             this.H1.Text = "Documentos fiscais";
-            this.H1.Click += new System.EventHandler(this.H1_Click);
             // 
             // moveToBack
             // 
@@ -58,36 +58,26 @@ namespace desktopv2
             this.moveToBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.moveToBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.moveToBack.Image = ((System.Drawing.Image)(resources.GetObject("moveToBack.Image")));
-            this.moveToBack.Location = new System.Drawing.Point(27, 39);
-            this.moveToBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.moveToBack.Location = new System.Drawing.Point(24, 29);
+            this.moveToBack.Margin = new System.Windows.Forms.Padding(4);
             this.moveToBack.Name = "moveToBack";
-            this.moveToBack.Size = new System.Drawing.Size(30, 41);
+            this.moveToBack.Size = new System.Drawing.Size(26, 31);
             this.moveToBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.moveToBack.TabIndex = 5;
             this.moveToBack.TabStop = false;
-            // 
-            // NFe
-            // 
-            this.NFe.Image = ((System.Drawing.Image)(resources.GetObject("NFe.Image")));
-            this.NFe.Location = new System.Drawing.Point(65, 221);
-            this.NFe.Name = "NFe";
-            this.NFe.Size = new System.Drawing.Size(846, 59);
-            this.NFe.TabIndex = 39;
-            this.NFe.Text = "Emitir Nota Fiscal Eletrônica";
-            this.NFe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.NFe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.NFe.UseVisualStyleBackColor = true;
+            this.moveToBack.Click += new System.EventHandler(this.moveToBack_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(65, 299);
+            this.button1.Location = new System.Drawing.Point(57, 224);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(846, 59);
+            this.button1.Size = new System.Drawing.Size(740, 44);
             this.button1.TabIndex = 40;
-            this.button1.Text = "Emitir Nota Fiscal de Serviço Eletrônica";
+            this.button1.Text = "Emitir Nota Fiscal de Serviço";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
@@ -99,11 +89,12 @@ namespace desktopv2
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(65, 375);
+            this.button2.Location = new System.Drawing.Point(57, 281);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(846, 59);
+            this.button2.Size = new System.Drawing.Size(740, 44);
             this.button2.TabIndex = 41;
-            this.button2.Text = "Emitir Nota Fiscal do Consumidor Eletrônica";
+            this.button2.Text = "Emitir Nota Fiscal do Consumidor";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -114,24 +105,53 @@ namespace desktopv2
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(65, 450);
+            this.button3.Location = new System.Drawing.Point(57, 338);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(846, 59);
+            this.button3.Size = new System.Drawing.Size(740, 44);
             this.button3.TabIndex = 42;
             this.button3.Text = "Emitir SPED";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // panel17
+            // 
+            this.panel17.Location = new System.Drawing.Point(0, 0);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(857, 29);
+            this.panel17.TabIndex = 43;
+            this.panel17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseDown);
+            this.panel17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseMove);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(57, 159);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(740, 44);
+            this.button4.TabIndex = 44;
+            this.button4.Text = "Emitir Nota Fiscal Eletrônica";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // DocumentosFiscais
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(987, 892);
+            this.ClientSize = new System.Drawing.Size(864, 461);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.panel17);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.NFe);
             this.Controls.Add(this.moveToBack);
             this.Controls.Add(this.H1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -148,9 +168,10 @@ namespace desktopv2
         #endregion
         private System.Windows.Forms.Label H1;
         private System.Windows.Forms.PictureBox moveToBack;
-        private System.Windows.Forms.Button NFe;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Button button4;
     }
 }
