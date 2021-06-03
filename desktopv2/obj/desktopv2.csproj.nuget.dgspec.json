@@ -11,24 +11,7 @@
         "projectName": "desktopv2",
         "projectPath": "C:\\Users\\jeffe\\Pimbeck\\desktopv2\\desktopv2.csproj",
         "packagesPath": "C:\\Users\\jeffe\\.nuget\\packages\\",
-<<<<<<< HEAD
-        "outputPath": "C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\obj\\",
-=======
-    "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj",
-        "projectName": "desktopv2",
-        "projectPath": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\obj\\",
->>>>>>> e2ae5dd4f4e03616a31a4f50120a1b21e31daa28
-=======
         "outputPath": "C:\\Users\\jeffe\\Pimbeck\\desktopv2\\obj\\",
->>>>>>> telaloginV2
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
