@@ -35,7 +35,24 @@ namespace desktopv2
 
         private void moveToBack_Click(object sender, EventArgs e) => this.Close();
 
-        private void AddEmployee_Click(object sender, EventArgs e) => this.Close();
-
+        private void AddEmployee_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Tem certeza que deseja realizar esta operação ?",
+                "Tem certeza ?",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show(
+                    "Operação realizaca com sucesso!",
+                    "Sucesso!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+                this.Close();
+            }
+        }
     }
 }

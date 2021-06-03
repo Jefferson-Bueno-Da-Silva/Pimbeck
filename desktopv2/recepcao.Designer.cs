@@ -230,6 +230,7 @@ namespace desktopv2
             this.ClientesBtn.TabIndex = 6;
             this.ClientesBtn.Text = "Clientes";
             this.ClientesBtn.UseVisualStyleBackColor = true;
+            this.ClientesBtn.Click += new System.EventHandler(this.ClientesBtn_Click);
             // 
             // FuncionariosBtn
             // 

@@ -40,5 +40,7 @@ namespace desktopv2
         private void minimize_Click(object sender, EventArgs e) => page.MinimizeClick(this);
 
         private void FuncionariosBtn_Click(object sender, EventArgs e) => new Funcionarios().Show();
+
+        private void ClientesBtn_Click(object sender, EventArgs e) => new Clientes().Show();
     }
 }
