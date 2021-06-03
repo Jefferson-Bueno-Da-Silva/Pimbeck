@@ -10,9 +10,13 @@ namespace desktopv2
 {
     public partial class Reservas : Form
     {
+        int X = 0;
+        int Y = 0;
         public Reservas()
         {
             InitializeComponent();
+            this.MouseDown += new MouseEventHandler(panel17_MouseDown);
+            this.MouseMove += new MouseEventHandler(panel17_MouseMove);
         }
 
         private void moveToBack_Click(object sender, EventArgs e)
@@ -20,15 +24,7 @@ namespace desktopv2
             this.Close();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(
-                "adicionar",
-                "add",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Exclamation
-            );
-        }
+        private void pictureBox1_Click(object sender, EventArgs e) => new ReservaAdicionar().Show();
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -59,6 +55,20 @@ namespace desktopv2
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Exclamation
             );
+        }
+
+        private void panel17_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            X = this.Left - MousePosition.X;
+            Y = this.Top - MousePosition.Y;
+        }
+
+        private void panel17_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            this.Left = X + MousePosition.X;
+            this.Top = Y + MousePosition.Y;
         }
     }
 }

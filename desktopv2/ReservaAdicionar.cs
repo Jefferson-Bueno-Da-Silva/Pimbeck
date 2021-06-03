@@ -8,11 +8,11 @@ using System.Windows.Forms;
 
 namespace desktopv2
 {
-    public partial class DocumentosFiscais : Form
+    public partial class ReservaAdicionar : Form
     {
         int X = 0;
         int Y = 0;
-        public DocumentosFiscais()
+        public ReservaAdicionar()
         {
             InitializeComponent();
             this.MouseDown += new MouseEventHandler(panel17_MouseDown);
@@ -38,24 +38,24 @@ namespace desktopv2
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void AddEmployee_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
+            DialogResult result = MessageBox.Show(
+                "Tem certeza que deseja realizar esta operação ?",
+                "Tem certeza ?",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show(
+                    "Operação realizaca com sucesso!",
+                    "Sucesso!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+                this.Close();
+            }
         }
     }
 }

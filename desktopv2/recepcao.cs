@@ -44,5 +44,7 @@ namespace desktopv2
         private void ClientesBtn_Click(object sender, EventArgs e) => new Clientes().Show();
 
         private void ReservasBtn_Click(object sender, EventArgs e) => new Reservas().Show();
+
+        private void DocumentosBtn_Click(object sender, EventArgs e) => new DocumentosFiscais().Show();
     }
 }

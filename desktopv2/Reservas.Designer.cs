@@ -72,7 +72,7 @@ namespace desktopv2
             this.name,
             this.address});
             this.dataGridView1.Location = new System.Drawing.Point(24, 125);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(816, 478);
@@ -106,7 +106,7 @@ namespace desktopv2
             this.moveToBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.moveToBack.Image = ((System.Drawing.Image)(resources.GetObject("moveToBack.Image")));
             this.moveToBack.Location = new System.Drawing.Point(24, 29);
-            this.moveToBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.moveToBack.Margin = new System.Windows.Forms.Padding(4);
             this.moveToBack.Name = "moveToBack";
             this.moveToBack.Size = new System.Drawing.Size(26, 32);
             this.moveToBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -169,6 +169,8 @@ namespace desktopv2
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(829, 29);
             this.panel17.TabIndex = 44;
+            this.panel17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseDown);
+            this.panel17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseMove);
             // 
             // Reservas
             // 
