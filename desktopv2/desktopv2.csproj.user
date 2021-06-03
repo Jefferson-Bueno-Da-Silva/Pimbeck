@@ -34,5 +34,8 @@
     <Compile Update="Reservas.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="TopPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

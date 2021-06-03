@@ -12,6 +12,7 @@ namespace desktopv2
     {
         int X = 0;
         int Y = 0;
+        TopPage page = new TopPage();
         public login()
         {
             InitializeComponent();
@@ -33,17 +34,9 @@ namespace desktopv2
             this.Top = Y + MousePosition.Y;
         }
 
-        private void login_Load(object sender, EventArgs e)
-        {
+        private void Close_Click(object sender, EventArgs e) => page.CloseClick();
 
-        }
-
-        private void Close_Click(object sender, EventArgs e) => this.Close();
-
-        private void minimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
+        private void minimize_Click(object sender, EventArgs e) => page.MinimizeClick(this);
 
         private void Entrar_Click(object sender, EventArgs e)
         {
