@@ -26,3 +26,4 @@ C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.pdb
 C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.genruntimeconfig.cache
 C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.TopPage.resources
 C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.ReservaAdicionar.resources
+C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.Aniversario.resources
