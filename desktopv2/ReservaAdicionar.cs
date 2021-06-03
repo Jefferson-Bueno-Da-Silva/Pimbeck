@@ -57,5 +57,10 @@ namespace desktopv2
                 this.Close();
             }
         }
+
+        private void printPreviewControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
