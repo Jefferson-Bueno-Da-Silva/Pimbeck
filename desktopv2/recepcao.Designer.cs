@@ -168,6 +168,7 @@ namespace desktopv2
             this.MarketingBtn.TabIndex = 11;
             this.MarketingBtn.Text = "Marketing";
             this.MarketingBtn.UseVisualStyleBackColor = true;
+            this.MarketingBtn.Click += new System.EventHandler(this.MarketingBtn_Click);
             // 
             // AlmoxarifadoBtn
             // 
