@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "0t+IoIIR7oukOK/Ltdrp2+22r3EdjAIKrdUbhIiJsgFJIRTV2bel2AcDUvCCRPwnJJ6zmUYNvvwk+o8hPKPkXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jeffe\\Pimbeck\\desktopv2\\desktopv2.csproj",
+=======
+  "dgSpecHash": "O3Z9/SIjz1Nf8rdCTKuUekkZOxHf2zkMlQDKhwM50Pb4MiCM1sE6OIxLWqeqVN1sFWx4jE5lV64qxFiECyRxCA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj",
+>>>>>>> origin/reservaadicionarV2
   "expectedPackageFiles": [],
   "logs": []
 }
