@@ -214,6 +214,7 @@ namespace desktopv2
             this.ReservasBtn.TabIndex = 7;
             this.ReservasBtn.Text = "Reservas";
             this.ReservasBtn.UseVisualStyleBackColor = true;
+            this.ReservasBtn.Click += new System.EventHandler(this.ReservasBtn_Click);
             // 
             // ClientesBtn
             // 
