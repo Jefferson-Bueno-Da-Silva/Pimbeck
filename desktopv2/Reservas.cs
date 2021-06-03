@@ -15,9 +15,50 @@ namespace desktopv2
             InitializeComponent();
         }
 
-        private void H1_Click(object sender, EventArgs e)
+        private void moveToBack_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "adicionar",
+                "add",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Exclamation
+            );
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Editar",
+                "Edit",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Exclamation
+            );
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Imprimir Relatório",
+                "Print",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Exclamation
+            );
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Gerar planilha exel",
+                "Planilha",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Exclamation
+            );
         }
     }
 }

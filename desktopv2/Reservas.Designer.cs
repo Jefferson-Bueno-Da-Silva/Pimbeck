@@ -40,6 +40,7 @@ namespace desktopv2
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel17 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,13 +54,12 @@ namespace desktopv2
             this.H1.AutoSize = true;
             this.H1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.H1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.H1.Location = new System.Drawing.Point(65, 39);
+            this.H1.Location = new System.Drawing.Point(57, 29);
             this.H1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.H1.Name = "H1";
-            this.H1.Size = new System.Drawing.Size(140, 41);
+            this.H1.Size = new System.Drawing.Size(114, 32);
             this.H1.TabIndex = 4;
             this.H1.Text = "Reservas";
-            this.H1.Click += new System.EventHandler(this.H1_Click);
             // 
             // dataGridView1
             // 
@@ -71,11 +71,11 @@ namespace desktopv2
             this.Cod,
             this.name,
             this.address});
-            this.dataGridView1.Location = new System.Drawing.Point(27, 167);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(24, 125);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(933, 638);
+            this.dataGridView1.Size = new System.Drawing.Size(816, 478);
             this.dataGridView1.TabIndex = 39;
             // 
             // Cod
@@ -105,60 +105,78 @@ namespace desktopv2
             this.moveToBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.moveToBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.moveToBack.Image = ((System.Drawing.Image)(resources.GetObject("moveToBack.Image")));
-            this.moveToBack.Location = new System.Drawing.Point(27, 39);
-            this.moveToBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.moveToBack.Location = new System.Drawing.Point(24, 29);
+            this.moveToBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.moveToBack.Name = "moveToBack";
-            this.moveToBack.Size = new System.Drawing.Size(30, 41);
+            this.moveToBack.Size = new System.Drawing.Size(26, 32);
             this.moveToBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.moveToBack.TabIndex = 5;
             this.moveToBack.TabStop = false;
+            this.moveToBack.Click += new System.EventHandler(this.moveToBack_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(32, 134);
+            this.pictureBox1.Location = new System.Drawing.Point(28, 100);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.Size = new System.Drawing.Size(22, 19);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(76, 134);
+            this.pictureBox2.Location = new System.Drawing.Point(66, 100);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox2.Size = new System.Drawing.Size(22, 19);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 41;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(122, 134);
+            this.pictureBox3.Location = new System.Drawing.Point(107, 100);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox3.Size = new System.Drawing.Size(22, 19);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 42;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(167, 134);
+            this.pictureBox4.Location = new System.Drawing.Point(146, 100);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.Size = new System.Drawing.Size(22, 19);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 43;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // panel17
+            // 
+            this.panel17.Location = new System.Drawing.Point(0, 0);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(829, 29);
+            this.panel17.TabIndex = 44;
             // 
             // Reservas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(987, 892);
+            this.ClientSize = new System.Drawing.Size(864, 632);
+            this.Controls.Add(this.panel17);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -193,5 +211,6 @@ namespace desktopv2
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel17;
     }
 }

@@ -32,7 +32,7 @@ namespace desktopv2
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.Entrar = new System.Windows.Forms.Button();
             this.Logo = new System.Windows.Forms.PictureBox();
-            this.Close = new System.Windows.Forms.Button();
+            this.close = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.minimize = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -66,6 +66,7 @@ namespace desktopv2
             this.Entrar.Text = "Entrar";
             this.Entrar.UseMnemonic = false;
             this.Entrar.UseVisualStyleBackColor = false;
+            this.Entrar.Click += new System.EventHandler(this.Entrar_Click);
             // 
             // Logo
             // 
@@ -78,31 +79,34 @@ namespace desktopv2
             this.Logo.TabIndex = 3;
             this.Logo.TabStop = false;
             // 
-            // Close
+            // close
             // 
-            this.Close.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Close.BackColor = System.Drawing.Color.Transparent;
-            this.Close.FlatAppearance.BorderSize = 0;
-            this.Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Close.ForeColor = System.Drawing.Color.White;
-            this.Close.Location = new System.Drawing.Point(435, 0);
-            this.Close.Margin = new System.Windows.Forms.Padding(0);
-            this.Close.Name = "Close";
-            this.Close.Size = new System.Drawing.Size(21, 29);
-            this.Close.TabIndex = 4;
-            this.Close.Text = "X";
-            this.Close.UseVisualStyleBackColor = false;
+            this.close.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.close.BackColor = System.Drawing.Color.Transparent;
+            this.close.FlatAppearance.BorderSize = 0;
+            this.close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.close.ForeColor = System.Drawing.Color.White;
+            this.close.Location = new System.Drawing.Point(435, 0);
+            this.close.Margin = new System.Windows.Forms.Padding(0);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(21, 29);
+            this.close.TabIndex = 4;
+            this.close.Text = "X";
+            this.close.UseVisualStyleBackColor = false;
+            this.close.Click += new System.EventHandler(this.Close_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.minimize);
-            this.panel1.Controls.Add(this.Close);
+            this.panel1.Controls.Add(this.close);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(466, 35);
             this.panel1.TabIndex = 5;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login__MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Login_MouseMove);
             // 
             // minimize
             // 
@@ -119,6 +123,7 @@ namespace desktopv2
             this.minimize.TabIndex = 5;
             this.minimize.Text = "-";
             this.minimize.UseVisualStyleBackColor = false;
+            this.minimize.Click += new System.EventHandler(this.minimize_Click);
             // 
             // label2
             // 
@@ -241,7 +246,7 @@ namespace desktopv2
 
         #endregion
         private System.Windows.Forms.PictureBox Logo;
-        private System.Windows.Forms.Button Close;
+        private System.Windows.Forms.Button close;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button minimize;
         private System.Windows.Forms.Label label2;

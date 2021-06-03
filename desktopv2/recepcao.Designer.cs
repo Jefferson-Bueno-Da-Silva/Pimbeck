@@ -45,6 +45,9 @@ namespace desktopv2
             this.label1 = new System.Windows.Forms.Label();
             this.UserName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.minimize = new System.Windows.Forms.Button();
+            this.close = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.H1 = new System.Windows.Forms.Label();
@@ -78,6 +81,7 @@ namespace desktopv2
             this.MenuPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel17.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -210,6 +214,7 @@ namespace desktopv2
             this.ReservasBtn.TabIndex = 7;
             this.ReservasBtn.Text = "Reservas";
             this.ReservasBtn.UseVisualStyleBackColor = true;
+            this.ReservasBtn.Click += new System.EventHandler(this.ReservasBtn_Click);
             // 
             // ClientesBtn
             // 
@@ -226,6 +231,7 @@ namespace desktopv2
             this.ClientesBtn.TabIndex = 6;
             this.ClientesBtn.Text = "Clientes";
             this.ClientesBtn.UseVisualStyleBackColor = true;
+            this.ClientesBtn.Click += new System.EventHandler(this.ClientesBtn_Click);
             // 
             // FuncionariosBtn
             // 
@@ -242,6 +248,7 @@ namespace desktopv2
             this.FuncionariosBtn.TabIndex = 5;
             this.FuncionariosBtn.Text = "Funcionarios";
             this.FuncionariosBtn.UseVisualStyleBackColor = true;
+            this.FuncionariosBtn.Click += new System.EventHandler(this.FuncionariosBtn_Click);
             // 
             // RecepcaoBtn
             // 
@@ -317,6 +324,52 @@ namespace desktopv2
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel17
+            // 
+            this.panel17.Controls.Add(this.minimize);
+            this.panel17.Controls.Add(this.close);
+            this.panel17.Location = new System.Drawing.Point(241, 0);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(875, 29);
+            this.panel17.TabIndex = 1;
+            this.panel17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseDown);
+            this.panel17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseMove);
+            // 
+            // minimize
+            // 
+            this.minimize.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.minimize.BackColor = System.Drawing.Color.Transparent;
+            this.minimize.FlatAppearance.BorderSize = 0;
+            this.minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.minimize.ForeColor = System.Drawing.Color.White;
+            this.minimize.Location = new System.Drawing.Point(805, 0);
+            this.minimize.Margin = new System.Windows.Forms.Padding(0);
+            this.minimize.Name = "minimize";
+            this.minimize.Size = new System.Drawing.Size(21, 29);
+            this.minimize.TabIndex = 5;
+            this.minimize.Text = "-";
+            this.minimize.UseVisualStyleBackColor = false;
+            this.minimize.Click += new System.EventHandler(this.minimize_Click);
+            // 
+            // close
+            // 
+            this.close.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.close.BackColor = System.Drawing.Color.Transparent;
+            this.close.FlatAppearance.BorderSize = 0;
+            this.close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.close.ForeColor = System.Drawing.Color.White;
+            this.close.Location = new System.Drawing.Point(837, 0);
+            this.close.Margin = new System.Windows.Forms.Padding(0);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(21, 29);
+            this.close.TabIndex = 4;
+            this.close.Text = "X";
+            this.close.UseVisualStyleBackColor = false;
+            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // panel2
             // 
@@ -653,6 +706,7 @@ namespace desktopv2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(1120, 675);
+            this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel15);
@@ -680,6 +734,7 @@ namespace desktopv2
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel17.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -760,5 +815,8 @@ namespace desktopv2
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button DocumentosBtn;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Button minimize;
+        private System.Windows.Forms.Button close;
     }
 }
