@@ -33,6 +33,12 @@ namespace desktopv2
             this.Top = Y + MousePosition.Y;
         }
 
-        private void moveToBack_Click(object sender, EventArgs e) => this.Close();   
+        private void moveToBack_Click(object sender, EventArgs e) => this.Close();
+
+        private void AddEmployee_Click(object sender, EventArgs e)
+        {
+            // adc funcionario
+            new Form1().Show();
+        }
     }
 }

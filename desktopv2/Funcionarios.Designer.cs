@@ -72,6 +72,7 @@ namespace desktopv2
             this.AddEmployee.Text = "Adicionar Funcionario";
             this.AddEmployee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.AddEmployee.UseVisualStyleBackColor = false;
+            this.AddEmployee.Click += new System.EventHandler(this.AddEmployee_Click);
             // 
             // moveToBack
             // 
@@ -80,9 +81,9 @@ namespace desktopv2
             this.moveToBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.moveToBack.Image = ((System.Drawing.Image)(resources.GetObject("moveToBack.Image")));
             this.moveToBack.Location = new System.Drawing.Point(13, 13);
-            this.moveToBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.moveToBack.Margin = new System.Windows.Forms.Padding(4);
             this.moveToBack.Name = "moveToBack";
-            this.moveToBack.Size = new System.Drawing.Size(26, 31);
+            this.moveToBack.Size = new System.Drawing.Size(42, 45);
             this.moveToBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.moveToBack.TabIndex = 5;
             this.moveToBack.TabStop = false;
