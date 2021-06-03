@@ -59,10 +59,10 @@ namespace Pimbeck
             Entrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             Entrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             Entrar.ForeColor = System.Drawing.Color.White;
-            Entrar.Location = new System.Drawing.Point(47, 387);
+            Entrar.Location = new System.Drawing.Point(63, 476);
             Entrar.Margin = new System.Windows.Forms.Padding(0);
             Entrar.Name = "Entrar";
-            Entrar.Size = new System.Drawing.Size(303, 35);
+            Entrar.Size = new System.Drawing.Size(404, 43);
             Entrar.TabIndex = 2;
             Entrar.Text = "Entrar";
             Entrar.UseMnemonic = false;
@@ -72,9 +72,10 @@ namespace Pimbeck
             // Logo
             // 
             this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
-            this.Logo.Location = new System.Drawing.Point(94, 3);
+            this.Logo.Location = new System.Drawing.Point(125, 4);
+            this.Logo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(227, 220);
+            this.Logo.Size = new System.Drawing.Size(303, 271);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Logo.TabIndex = 3;
             this.Logo.TabStop = false;
@@ -87,10 +88,10 @@ namespace Pimbeck
             this.Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(50)), true);
             this.Close.ForeColor = System.Drawing.Color.White;
-            this.Close.Location = new System.Drawing.Point(373, 0);
+            this.Close.Location = new System.Drawing.Point(497, 0);
             this.Close.Margin = new System.Windows.Forms.Padding(0);
             this.Close.Name = "Close";
-            this.Close.Size = new System.Drawing.Size(18, 25);
+            this.Close.Size = new System.Drawing.Size(24, 31);
             this.Close.TabIndex = 4;
             this.Close.Text = "X";
             this.Close.UseVisualStyleBackColor = false;
@@ -101,8 +102,9 @@ namespace Pimbeck
             this.panel1.Controls.Add(this.minimize);
             this.panel1.Controls.Add(this.Close);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(400, 30);
+            this.panel1.Size = new System.Drawing.Size(533, 37);
             this.panel1.TabIndex = 5;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -116,10 +118,10 @@ namespace Pimbeck
             this.minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.minimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(50)), true);
             this.minimize.ForeColor = System.Drawing.Color.White;
-            this.minimize.Location = new System.Drawing.Point(346, 0);
+            this.minimize.Location = new System.Drawing.Point(461, 0);
             this.minimize.Margin = new System.Windows.Forms.Padding(0);
             this.minimize.Name = "minimize";
-            this.minimize.Size = new System.Drawing.Size(18, 25);
+            this.minimize.Size = new System.Drawing.Size(24, 31);
             this.minimize.TabIndex = 5;
             this.minimize.Text = "-";
             this.minimize.UseVisualStyleBackColor = false;
@@ -130,10 +132,9 @@ namespace Pimbeck
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label2.Location = new System.Drawing.Point(43, 227);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(57, 279);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 25);
+            this.label2.Size = new System.Drawing.Size(82, 32);
             this.label2.TabIndex = 7;
             this.label2.Text = "Log in:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -141,10 +142,10 @@ namespace Pimbeck
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(48, 275);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(64, 338);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(19, 20);
+            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -152,10 +153,10 @@ namespace Pimbeck
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(47, 320);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(63, 394);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(19, 20);
+            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
@@ -164,28 +165,28 @@ namespace Pimbeck
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(47, 301);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(63, 370);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(303, 1);
+            this.panel2.Size = new System.Drawing.Size(404, 1);
             this.panel2.TabIndex = 10;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Silver;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(303, 1);
+            this.panel3.Size = new System.Drawing.Size(404, 1);
             this.panel3.TabIndex = 11;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Silver;
-            this.panel4.Location = new System.Drawing.Point(47, 346);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Location = new System.Drawing.Point(63, 426);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(303, 1);
+            this.panel4.Size = new System.Drawing.Size(404, 1);
             this.panel4.TabIndex = 12;
             // 
             // name
@@ -194,11 +195,11 @@ namespace Pimbeck
             this.name.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.name.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.name.ForeColor = System.Drawing.Color.White;
-            this.name.Location = new System.Drawing.Point(77, 275);
-            this.name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.name.Location = new System.Drawing.Point(103, 338);
+            this.name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.name.Multiline = true;
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(273, 20);
+            this.name.Size = new System.Drawing.Size(364, 25);
             this.name.TabIndex = 13;
             // 
             // pass
@@ -207,20 +208,20 @@ namespace Pimbeck
             this.pass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pass.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.pass.ForeColor = System.Drawing.Color.White;
-            this.pass.Location = new System.Drawing.Point(77, 320);
-            this.pass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pass.Location = new System.Drawing.Point(103, 394);
+            this.pass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pass.Multiline = true;
             this.pass.Name = "pass";
             this.pass.PasswordChar = '*';
-            this.pass.Size = new System.Drawing.Size(273, 20);
+            this.pass.Size = new System.Drawing.Size(364, 25);
             this.pass.TabIndex = 14;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(400, 474);
+            this.ClientSize = new System.Drawing.Size(533, 583);
             this.Controls.Add(this.pass);
             this.Controls.Add(this.name);
             this.Controls.Add(this.panel4);
@@ -233,6 +234,7 @@ namespace Pimbeck
             this.Controls.Add(Entrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login - Pimbeck";

@@ -8,17 +8,17 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Users\\jeffe\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\desktopv2.csproj",
+      "projectUniqueName": "C:\\Users\\jeffe\\Pimbeck\\desktopv2\\desktopv2.csproj",
       "projectName": "desktopv2",
-      "projectPath": "C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\desktopv2.csproj",
+      "projectPath": "C:\\Users\\jeffe\\Pimbeck\\desktopv2\\desktopv2.csproj",
       "packagesPath": "C:\\Users\\jeffe\\.nuget\\packages\\",
+<<<<<<< HEAD
       "outputPath": "C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\obj\\",
 =======
       "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj",
@@ -27,12 +27,15 @@
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\obj\\",
 >>>>>>> e2ae5dd4f4e03616a31a4f50120a1b21e31daa28
+=======
+      "outputPath": "C:\\Users\\jeffe\\Pimbeck\\desktopv2\\obj\\",
+>>>>>>> telaloginV2
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jeffe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -86,10 +89,14 @@
       "level": "Warning",
       "warningLevel": 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
       "message": "Problema ao ler o arquivo de cache C:\\Users\\jeffe\\C#\\Pimbeck\\desktopv2\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
 =======
       "message": "Problem reading the cache file C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
 >>>>>>> e2ae5dd4f4e03616a31a4f50120a1b21e31daa28
+=======
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\jeffe\\Pimbeck\\desktopv2\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> telaloginV2
     }
   ]
 }
