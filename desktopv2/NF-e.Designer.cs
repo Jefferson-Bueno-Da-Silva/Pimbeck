@@ -69,11 +69,11 @@ namespace desktopv2
             this.label18 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label19 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.NomeServiço = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label19 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -87,10 +87,9 @@ namespace desktopv2
             this.label3.Location = new System.Drawing.Point(28, 132);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 20);
+            this.label3.Size = new System.Drawing.Size(118, 15);
             this.label3.TabIndex = 5;
             this.label3.Text = "Nome / Razão social:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label5
             // 
@@ -100,7 +99,7 @@ namespace desktopv2
             this.label5.Location = new System.Drawing.Point(499, 208);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 20);
+            this.label5.Size = new System.Drawing.Size(54, 15);
             this.label5.TabIndex = 9;
             this.label5.Text = "Telefone:";
             // 
@@ -112,7 +111,7 @@ namespace desktopv2
             this.label6.Location = new System.Drawing.Point(513, 246);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 20);
+            this.label6.Size = new System.Drawing.Size(44, 15);
             this.label6.TabIndex = 11;
             this.label6.Text = "E-mail:";
             // 
@@ -124,7 +123,7 @@ namespace desktopv2
             this.label1.Location = new System.Drawing.Point(96, 170);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 20);
+            this.label1.Size = new System.Drawing.Size(69, 15);
             this.label1.TabIndex = 42;
             this.label1.Text = "CPF / CNPJ:";
             // 
@@ -141,6 +140,7 @@ namespace desktopv2
             this.moveToBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.moveToBack.TabIndex = 43;
             this.moveToBack.TabStop = false;
+            this.moveToBack.Click += new System.EventHandler(this.moveToBack_Click_1);
             // 
             // H1
             // 
@@ -150,10 +150,9 @@ namespace desktopv2
             this.H1.Location = new System.Drawing.Point(73, 39);
             this.H1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.H1.Name = "H1";
-            this.H1.Size = new System.Drawing.Size(86, 41);
+            this.H1.Size = new System.Drawing.Size(68, 32);
             this.H1.TabIndex = 44;
             this.H1.Text = "NF-e";
-            this.H1.Click += new System.EventHandler(this.H1_Click);
             // 
             // panel17
             // 
@@ -162,6 +161,8 @@ namespace desktopv2
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(1113, 39);
             this.panel17.TabIndex = 61;
+            this.panel17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseDown);
+            this.panel17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseMove);
             // 
             // NOME
             // 
@@ -195,7 +196,7 @@ namespace desktopv2
             this.label4.Location = new System.Drawing.Point(104, 206);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 20);
+            this.label4.Size = new System.Drawing.Size(59, 15);
             this.label4.TabIndex = 64;
             this.label4.Text = "Endereço:";
             // 
@@ -210,7 +211,6 @@ namespace desktopv2
             this.textBox1.Size = new System.Drawing.Size(277, 32);
             this.textBox1.TabIndex = 65;
             this.textBox1.Text = "Rua Silvio Barbiere 355";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -232,7 +232,7 @@ namespace desktopv2
             this.label11.Location = new System.Drawing.Point(141, 246);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(37, 20);
+            this.label11.Size = new System.Drawing.Size(31, 15);
             this.label11.TabIndex = 66;
             this.label11.Text = "CEP:";
             // 
@@ -256,7 +256,7 @@ namespace desktopv2
             this.label2.Location = new System.Drawing.Point(509, 132);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 20);
+            this.label2.Size = new System.Drawing.Size(47, 15);
             this.label2.TabIndex = 68;
             this.label2.Text = "Cidade:";
             // 
@@ -325,7 +325,7 @@ namespace desktopv2
             this.label7.Location = new System.Drawing.Point(509, 336);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 20);
+            this.label7.Size = new System.Drawing.Size(47, 15);
             this.label7.TabIndex = 82;
             this.label7.Text = "Cidade:";
             // 
@@ -348,7 +348,7 @@ namespace desktopv2
             this.label8.Location = new System.Drawing.Point(141, 450);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 20);
+            this.label8.Size = new System.Drawing.Size(31, 15);
             this.label8.TabIndex = 80;
             this.label8.Text = "CEP:";
             // 
@@ -362,7 +362,6 @@ namespace desktopv2
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(277, 32);
             this.textBox10.TabIndex = 79;
-            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // label9
             // 
@@ -372,7 +371,7 @@ namespace desktopv2
             this.label9.Location = new System.Drawing.Point(104, 410);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 20);
+            this.label9.Size = new System.Drawing.Size(59, 15);
             this.label9.TabIndex = 78;
             this.label9.Text = "Endereço:";
             // 
@@ -395,7 +394,7 @@ namespace desktopv2
             this.label10.Location = new System.Drawing.Point(96, 374);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 20);
+            this.label10.Size = new System.Drawing.Size(69, 15);
             this.label10.TabIndex = 76;
             this.label10.Text = "CPF / CNPJ:";
             // 
@@ -407,7 +406,7 @@ namespace desktopv2
             this.label12.Location = new System.Drawing.Point(513, 450);
             this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(55, 20);
+            this.label12.Size = new System.Drawing.Size(44, 15);
             this.label12.TabIndex = 75;
             this.label12.Text = "E-mail:";
             // 
@@ -419,7 +418,7 @@ namespace desktopv2
             this.label13.Location = new System.Drawing.Point(499, 412);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(69, 20);
+            this.label13.Size = new System.Drawing.Size(54, 15);
             this.label13.TabIndex = 74;
             this.label13.Text = "Telefone:";
             // 
@@ -431,7 +430,7 @@ namespace desktopv2
             this.label14.Location = new System.Drawing.Point(28, 336);
             this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(150, 20);
+            this.label14.Size = new System.Drawing.Size(118, 15);
             this.label14.TabIndex = 73;
             this.label14.Text = "Nome / Razão social:";
             // 
@@ -457,7 +456,6 @@ namespace desktopv2
             this.textBox13.Size = new System.Drawing.Size(277, 32);
             this.textBox13.TabIndex = 87;
             this.textBox13.Text = "MT";
-            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
             // 
             // label15
             // 
@@ -467,10 +465,9 @@ namespace desktopv2
             this.label15.Location = new System.Drawing.Point(539, 170);
             this.label15.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(29, 20);
+            this.label15.Size = new System.Drawing.Size(24, 15);
             this.label15.TabIndex = 86;
             this.label15.Text = "UF:";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // textBox14
             // 
@@ -491,7 +488,7 @@ namespace desktopv2
             this.label16.Location = new System.Drawing.Point(539, 374);
             this.label16.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(29, 20);
+            this.label16.Size = new System.Drawing.Size(24, 15);
             this.label16.TabIndex = 88;
             this.label16.Text = "UF:";
             // 
@@ -503,10 +500,9 @@ namespace desktopv2
             this.label17.Location = new System.Drawing.Point(429, 88);
             this.label17.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(159, 20);
+            this.label17.Size = new System.Drawing.Size(126, 15);
             this.label17.TabIndex = 90;
             this.label17.Text = "Prestador de serviços";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label18
             // 
@@ -516,7 +512,7 @@ namespace desktopv2
             this.label18.Location = new System.Drawing.Point(429, 296);
             this.label18.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(154, 20);
+            this.label18.Size = new System.Drawing.Size(121, 15);
             this.label18.TabIndex = 91;
             this.label18.Text = "Tomador de serviços";
             // 
@@ -545,28 +541,6 @@ namespace desktopv2
             this.dataGridView1.Size = new System.Drawing.Size(933, 117);
             this.dataGridView1.TabIndex = 93;
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label19.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label19.Location = new System.Drawing.Point(866, 52);
-            this.label19.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(94, 28);
-            this.label19.TabIndex = 97;
-            this.label19.Text = "Imprimir";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(838, 47);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(29, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 96;
-            this.pictureBox1.TabStop = false;
-            // 
             // NomeServiço
             // 
             this.NomeServiço.HeaderText = "Nome serviço";
@@ -588,9 +562,31 @@ namespace desktopv2
             this.ValorTotal.Name = "ValorTotal";
             this.ValorTotal.Width = 125;
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label19.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label19.Location = new System.Drawing.Point(866, 52);
+            this.label19.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(77, 21);
+            this.label19.TabIndex = 97;
+            this.label19.Text = "Imprimir";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(838, 47);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(29, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 96;
+            this.pictureBox1.TabStop = false;
+            // 
             // NF_e
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(987, 624);
@@ -641,7 +637,6 @@ namespace desktopv2
             this.Name = "NF_e";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prestador de serviço";
-            this.Load += new System.EventHandler(this.NF_e_Load);
             ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
