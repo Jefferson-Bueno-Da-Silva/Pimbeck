@@ -26,6 +26,7 @@ C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.pdb
 C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.genruntimeconfig.cache
 C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.TopPage.resources
 C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.ReservaAdicionar.resources
+<<<<<<< HEAD
 C:\Users\Usuario\OneDrive\Pulpit\ADS\PIM_III\Pimbeck\desktopv2\bin\Debug\netcoreapp3.1\desktopv2.exe
 C:\Users\Usuario\OneDrive\Pulpit\ADS\PIM_III\Pimbeck\desktopv2\bin\Debug\netcoreapp3.1\desktopv2.deps.json
 C:\Users\Usuario\OneDrive\Pulpit\ADS\PIM_III\Pimbeck\desktopv2\bin\Debug\netcoreapp3.1\desktopv2.runtimeconfig.json
@@ -54,3 +55,8 @@ C:\Users\Usuario\OneDrive\Pulpit\ADS\PIM_III\Pimbeck\desktopv2\obj\Debug\netcore
 C:\Users\Usuario\OneDrive\Pulpit\ADS\PIM_III\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.dll
 C:\Users\Usuario\OneDrive\Pulpit\ADS\PIM_III\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.pdb
 C:\Users\Usuario\OneDrive\Pulpit\ADS\PIM_III\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.genruntimeconfig.cache
+=======
+C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.Aniversario.resources
+C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.Oferta.resources
+C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.Campanha.resources
+>>>>>>> Marketing

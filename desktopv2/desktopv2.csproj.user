@@ -4,6 +4,12 @@
     <Compile Update="Almoxarifado.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Aniversario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Campanha.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -28,7 +34,11 @@
     <Compile Update="Marketing.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="NF-e.cs">
+=======
+    <Compile Update="Oferta.cs">
+>>>>>>> Marketing
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="recepcao.cs">
