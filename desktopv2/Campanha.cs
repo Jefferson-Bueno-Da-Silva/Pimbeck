@@ -8,11 +8,11 @@ using System.Windows.Forms;
 
 namespace desktopv2
 {
-    public partial class Marketing : Form
+    public partial class Campanha : Form
     {
         int X = 0;
         int Y = 0;
-        public Marketing()
+        public Campanha()
         {
             InitializeComponent();
             this.MouseDown += new MouseEventHandler(panel17_MouseDown);
@@ -38,10 +38,9 @@ namespace desktopv2
             this.Close();
         }
 
-        private void button4_Click(object sender, EventArgs e) => new Aniversario().Show();
+        private void button4_Click(object sender, EventArgs e)
+        {
 
-        private void button1_Click(object sender, EventArgs e) => new Oferta().Show();
-
-        private void button2_Click(object sender, EventArgs e) => new Campanha().Show();
+        }
     }
 }

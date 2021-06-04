@@ -28,3 +28,4 @@ C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.TopPage.resou
 C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.ReservaAdicionar.resources
 C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.Aniversario.resources
 C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.Oferta.resources
+C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.Campanha.resources
