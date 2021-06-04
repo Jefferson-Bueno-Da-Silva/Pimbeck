@@ -69,11 +69,14 @@ namespace desktopv2
             this.label18 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label19 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.NomeServiço = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QTD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -532,9 +535,9 @@ namespace desktopv2
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.ColumnHeadersHeight = 29;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
+            this.NomeServiço,
             this.Item,
-            this.QTD});
+            this.ValorTotal});
             this.dataGridView1.Location = new System.Drawing.Point(27, 503);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridView1.Name = "dataGridView1";
@@ -542,12 +545,34 @@ namespace desktopv2
             this.dataGridView1.Size = new System.Drawing.Size(933, 117);
             this.dataGridView1.TabIndex = 93;
             // 
-            // dataGridViewTextBoxColumn1
+            // label19
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Tipo de Bem";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label19.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label19.Location = new System.Drawing.Point(866, 52);
+            this.label19.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(94, 28);
+            this.label19.TabIndex = 97;
+            this.label19.Text = "Imprimir";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(838, 47);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(29, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 96;
+            this.pictureBox1.TabStop = false;
+            // 
+            // NomeServiço
+            // 
+            this.NomeServiço.HeaderText = "Nome serviço";
+            this.NomeServiço.MinimumWidth = 6;
+            this.NomeServiço.Name = "NomeServiço";
+            this.NomeServiço.Width = 125;
             // 
             // Item
             // 
@@ -556,12 +581,12 @@ namespace desktopv2
             this.Item.Name = "Item";
             this.Item.Width = 125;
             // 
-            // QTD
+            // ValorTotal
             // 
-            this.QTD.HeaderText = "QTD";
-            this.QTD.MinimumWidth = 6;
-            this.QTD.Name = "QTD";
-            this.QTD.Width = 125;
+            this.ValorTotal.HeaderText = "Valor Total";
+            this.ValorTotal.MinimumWidth = 6;
+            this.ValorTotal.Name = "ValorTotal";
+            this.ValorTotal.Width = 125;
             // 
             // NF_e
             // 
@@ -569,6 +594,8 @@ namespace desktopv2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(987, 624);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
@@ -617,6 +644,7 @@ namespace desktopv2
             this.Load += new System.EventHandler(this.NF_e_Load);
             ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -662,8 +690,10 @@ namespace desktopv2
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NomeServiço;
         private System.Windows.Forms.DataGridViewTextBoxColumn Item;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QTD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ValorTotal;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
