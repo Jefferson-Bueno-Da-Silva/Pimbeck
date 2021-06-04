@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\jeffe\\.nuget\\packages\\": {},
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jeffe\\Pimbeck\\desktopv2\\desktopv2.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj",
       "projectName": "desktopv2",
-      "projectPath": "C:\\Users\\jeffe\\Pimbeck\\desktopv2\\desktopv2.csproj",
-      "packagesPath": "C:\\Users\\jeffe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jeffe\\Pimbeck\\desktopv2\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\jeffe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -71,13 +71,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\jeffe\\Pimbeck\\desktopv2\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

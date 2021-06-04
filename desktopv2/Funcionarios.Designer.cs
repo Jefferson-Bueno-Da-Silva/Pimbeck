@@ -47,10 +47,10 @@ namespace desktopv2
             this.H1.AutoSize = true;
             this.H1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.H1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.H1.Location = new System.Drawing.Point(342, 46);
-            this.H1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.H1.Location = new System.Drawing.Point(391, 61);
+            this.H1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.H1.Name = "H1";
-            this.H1.Size = new System.Drawing.Size(161, 32);
+            this.H1.Size = new System.Drawing.Size(197, 41);
             this.H1.TabIndex = 4;
             this.H1.Text = "Funcionarios";
             // 
@@ -64,10 +64,9 @@ namespace desktopv2
             this.AddEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddEmployee.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.AddEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AddEmployee.Location = new System.Drawing.Point(225, 589);
-            this.AddEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AddEmployee.Location = new System.Drawing.Point(257, 785);
             this.AddEmployee.Name = "AddEmployee";
-            this.AddEmployee.Size = new System.Drawing.Size(404, 44);
+            this.AddEmployee.Size = new System.Drawing.Size(462, 59);
             this.AddEmployee.TabIndex = 38;
             this.AddEmployee.Text = "Adicionar Funcionario";
             this.AddEmployee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -80,10 +79,10 @@ namespace desktopv2
             this.moveToBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.moveToBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.moveToBack.Image = ((System.Drawing.Image)(resources.GetObject("moveToBack.Image")));
-            this.moveToBack.Location = new System.Drawing.Point(13, 13);
-            this.moveToBack.Margin = new System.Windows.Forms.Padding(4);
+            this.moveToBack.Location = new System.Drawing.Point(15, 17);
+            this.moveToBack.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.moveToBack.Name = "moveToBack";
-            this.moveToBack.Size = new System.Drawing.Size(42, 45);
+            this.moveToBack.Size = new System.Drawing.Size(48, 60);
             this.moveToBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.moveToBack.TabIndex = 5;
             this.moveToBack.TabStop = false;
@@ -92,15 +91,16 @@ namespace desktopv2
             // panel17
             // 
             this.panel17.Location = new System.Drawing.Point(0, 0);
-            this.panel17.Margin = new System.Windows.Forms.Padding(4);
+            this.panel17.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(829, 29);
+            this.panel17.Size = new System.Drawing.Size(947, 39);
             this.panel17.TabIndex = 40;
             this.panel17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseDown);
             this.panel17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseMove);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowDrop = true;
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -109,11 +109,11 @@ namespace desktopv2
             this.Cod,
             this.name,
             this.address});
-            this.dataGridView1.Location = new System.Drawing.Point(13, 100);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 133);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(816, 461);
+            this.dataGridView1.Size = new System.Drawing.Size(933, 615);
             this.dataGridView1.TabIndex = 41;
             // 
             // Cod
@@ -139,17 +139,16 @@ namespace desktopv2
             // 
             // Funcionarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(845, 655);
+            this.ClientSize = new System.Drawing.Size(966, 873);
             this.Controls.Add(this.moveToBack);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.AddEmployee);
             this.Controls.Add(this.H1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Funcionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
