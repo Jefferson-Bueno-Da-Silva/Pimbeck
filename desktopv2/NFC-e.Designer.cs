@@ -30,9 +30,9 @@ namespace desktopv2
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NFC_e));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -73,7 +73,7 @@ namespace desktopv2
             this.label3.Location = new System.Drawing.Point(28, 132);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 20);
+            this.label3.Size = new System.Drawing.Size(118, 15);
             this.label3.TabIndex = 5;
             this.label3.Text = "Nome / Razão social:";
             // 
@@ -85,7 +85,7 @@ namespace desktopv2
             this.label5.Location = new System.Drawing.Point(499, 208);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 20);
+            this.label5.Size = new System.Drawing.Size(54, 15);
             this.label5.TabIndex = 9;
             this.label5.Text = "Telefone:";
             // 
@@ -97,7 +97,7 @@ namespace desktopv2
             this.label6.Location = new System.Drawing.Point(513, 246);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 20);
+            this.label6.Size = new System.Drawing.Size(44, 15);
             this.label6.TabIndex = 11;
             this.label6.Text = "E-mail:";
             // 
@@ -109,7 +109,7 @@ namespace desktopv2
             this.label1.Location = new System.Drawing.Point(96, 170);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 20);
+            this.label1.Size = new System.Drawing.Size(69, 15);
             this.label1.TabIndex = 42;
             this.label1.Text = "CPF / CNPJ:";
             // 
@@ -126,6 +126,7 @@ namespace desktopv2
             this.moveToBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.moveToBack.TabIndex = 43;
             this.moveToBack.TabStop = false;
+            this.moveToBack.Click += new System.EventHandler(this.moveToBack_Click);
             // 
             // H1
             // 
@@ -135,7 +136,7 @@ namespace desktopv2
             this.H1.Location = new System.Drawing.Point(73, 39);
             this.H1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.H1.Name = "H1";
-            this.H1.Size = new System.Drawing.Size(103, 41);
+            this.H1.Size = new System.Drawing.Size(81, 32);
             this.H1.TabIndex = 44;
             this.H1.Text = "NFS-e";
             // 
@@ -146,6 +147,8 @@ namespace desktopv2
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(1113, 39);
             this.panel17.TabIndex = 61;
+            this.panel17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseDown);
+            this.panel17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseMove);
             // 
             // NOME
             // 
@@ -179,7 +182,7 @@ namespace desktopv2
             this.label4.Location = new System.Drawing.Point(104, 206);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 20);
+            this.label4.Size = new System.Drawing.Size(59, 15);
             this.label4.TabIndex = 64;
             this.label4.Text = "Endereço:";
             // 
@@ -215,7 +218,7 @@ namespace desktopv2
             this.label11.Location = new System.Drawing.Point(141, 246);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(37, 20);
+            this.label11.Size = new System.Drawing.Size(31, 15);
             this.label11.TabIndex = 66;
             this.label11.Text = "CEP:";
             // 
@@ -239,7 +242,7 @@ namespace desktopv2
             this.label2.Location = new System.Drawing.Point(509, 132);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 20);
+            this.label2.Size = new System.Drawing.Size(47, 15);
             this.label2.TabIndex = 68;
             this.label2.Text = "Cidade:";
             // 
@@ -287,7 +290,7 @@ namespace desktopv2
             this.label15.Location = new System.Drawing.Point(539, 170);
             this.label15.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(29, 20);
+            this.label15.Size = new System.Drawing.Size(24, 15);
             this.label15.TabIndex = 86;
             this.label15.Text = "UF:";
             // 
@@ -299,7 +302,7 @@ namespace desktopv2
             this.label17.Location = new System.Drawing.Point(434, 92);
             this.label17.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(159, 20);
+            this.label17.Size = new System.Drawing.Size(126, 15);
             this.label17.TabIndex = 90;
             this.label17.Text = "Prestador de serviços";
             // 
@@ -322,9 +325,9 @@ namespace desktopv2
             // 
             // dataGridViewTextBoxColumn1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewTextBoxColumn1.HeaderText = "Nome serviço";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
@@ -332,9 +335,9 @@ namespace desktopv2
             // 
             // Item
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Item.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Item.DefaultCellStyle = dataGridViewCellStyle8;
             this.Item.HeaderText = "Item";
             this.Item.MinimumWidth = 6;
             this.Item.Name = "Item";
@@ -342,9 +345,9 @@ namespace desktopv2
             // 
             // ValorTotal
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ValorTotal.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ValorTotal.DefaultCellStyle = dataGridViewCellStyle9;
             this.ValorTotal.HeaderText = "Valor Total";
             this.ValorTotal.MinimumWidth = 6;
             this.ValorTotal.Name = "ValorTotal";
@@ -368,7 +371,7 @@ namespace desktopv2
             this.label19.Location = new System.Drawing.Point(866, 44);
             this.label19.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(94, 28);
+            this.label19.Size = new System.Drawing.Size(77, 21);
             this.label19.TabIndex = 95;
             this.label19.Text = "Imprimir";
             // 
@@ -382,7 +385,7 @@ namespace desktopv2
             // 
             // NFC_e
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(987, 624);

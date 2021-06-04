@@ -78,10 +78,16 @@
   <metadata name="ValorTotal.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
+  <metadata name="Item.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <metadata name="ValorTotal.UserAddedColumn" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABcAAAAVCAYAAACt4nWrAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAO1JREFUSEvtldENwiAYhBnBDXQER3CUjtARuoFu4AgdoSM4QkeghYc+1jvyEyNC
+        EQAACxEBf2RfkQAAAO1JREFUSEvtldENwiAYhBnBDXQER3CUjtARuoFu4AgdoSM4QkeghYc+1jvyEyNC
         ixVfjJdcGuD+j5S0/ComY8x1HMc518i3WuudlKeFUMWCYRhaPLnJoiU3o64WRFoINQxP07SXqVUJvJHh
         q/ha8MFae5bwieMcM886GT8fjweWMnkOjJ3qWOBTg9vwvG7hQiFrwvtgspj/8Kh/EI7v9Oh+hBXxr4zV
         00n4u3dLzN+F4y7uYgsF4L07M9zJHdzTmNRc3ADXnkEeubL8EC+cLXDWyTAthFwnYutiu8uw70SVIJaF

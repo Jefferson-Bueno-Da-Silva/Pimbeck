@@ -10,54 +10,32 @@ namespace desktopv2
 {
     public partial class NF_e : Form
     {
+        int X = 0;
+        int Y = 0;
         public NF_e()
         {
             InitializeComponent();
+            this.MouseDown += new MouseEventHandler(panel17_MouseDown);
+            this.MouseMove += new MouseEventHandler(panel17_MouseMove);
         }
 
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        private void panel17_MouseDown(object sender, MouseEventArgs e)
         {
-
+            if (e.Button != MouseButtons.Left) return;
+            X = this.Left - MousePosition.X;
+            Y = this.Top - MousePosition.Y;
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void panel17_MouseMove(object sender, MouseEventArgs e)
         {
-
+            if (e.Button != MouseButtons.Left) return;
+            this.Left = X + MousePosition.X;
+            this.Top = Y + MousePosition.Y;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void moveToBack_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox13_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NF_e_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void H1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

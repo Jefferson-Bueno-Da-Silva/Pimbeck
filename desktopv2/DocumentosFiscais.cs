@@ -38,24 +38,10 @@ namespace desktopv2
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+        private void button4_Click(object sender, EventArgs e) => new NF_e().Show();
 
-        }
+        private void button1_Click(object sender, EventArgs e) => new NFS_e().Show();
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
+        private void button2_Click(object sender, EventArgs e) => new NFC_e().Show();
     }
 }

@@ -60,3 +60,6 @@ C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.Aniversario.r
 C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.Oferta.resources
 C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.Campanha.resources
 >>>>>>> Marketing
+C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.NF_e.resources
+C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.NFC_e.resources
+C:\Users\jeffe\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.NFS_e.resources
