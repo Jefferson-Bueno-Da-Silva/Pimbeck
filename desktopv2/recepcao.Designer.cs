@@ -185,6 +185,7 @@ namespace desktopv2
             this.AlmoxarifadoBtn.TabIndex = 10;
             this.AlmoxarifadoBtn.Text = "Almoxarifado";
             this.AlmoxarifadoBtn.UseVisualStyleBackColor = true;
+            this.AlmoxarifadoBtn.Click += new System.EventHandler(this.AlmoxarifadoBtn_Click);
             // 
             // FinanceiroBtn
             // 

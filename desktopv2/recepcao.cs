@@ -39,6 +39,8 @@ namespace desktopv2
 
         private void minimize_Click(object sender, EventArgs e) => page.MinimizeClick(this);
 
+        // Navegação
+
         private void FuncionariosBtn_Click(object sender, EventArgs e) => new Funcionarios().Show();
 
         private void ClientesBtn_Click(object sender, EventArgs e) => new Clientes().Show();
@@ -48,6 +50,8 @@ namespace desktopv2
         private void DocumentosBtn_Click(object sender, EventArgs e) => new DocumentosFiscais().Show();
 
         private void MarketingBtn_Click(object sender, EventArgs e) => new Marketing().Show();
+
+        private void AlmoxarifadoBtn_Click(object sender, EventArgs e) => new Almoxarifado().Show();
 
         private void button1_Click(object sender, EventArgs e)
         {
