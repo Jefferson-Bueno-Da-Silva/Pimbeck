@@ -40,10 +40,12 @@ namespace desktopv2
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ContaNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Banco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Conta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descrição = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Change = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Detalhe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -55,10 +57,10 @@ namespace desktopv2
             this.H1.AutoSize = true;
             this.H1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.H1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.H1.Location = new System.Drawing.Point(65, 39);
-            this.H1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.H1.Location = new System.Drawing.Point(57, 29);
+            this.H1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.H1.Name = "H1";
-            this.H1.Size = new System.Drawing.Size(297, 41);
+            this.H1.Size = new System.Drawing.Size(242, 32);
             this.H1.TabIndex = 4;
             this.H1.Text = "Integração Bancaria";
             // 
@@ -68,10 +70,10 @@ namespace desktopv2
             this.moveToBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.moveToBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.moveToBack.Image = ((System.Drawing.Image)(resources.GetObject("moveToBack.Image")));
-            this.moveToBack.Location = new System.Drawing.Point(27, 39);
-            this.moveToBack.Margin = new System.Windows.Forms.Padding(5);
+            this.moveToBack.Location = new System.Drawing.Point(24, 29);
+            this.moveToBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.moveToBack.Name = "moveToBack";
-            this.moveToBack.Size = new System.Drawing.Size(30, 43);
+            this.moveToBack.Size = new System.Drawing.Size(26, 32);
             this.moveToBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.moveToBack.TabIndex = 5;
             this.moveToBack.TabStop = false;
@@ -79,18 +81,17 @@ namespace desktopv2
             // panel17
             // 
             this.panel17.Location = new System.Drawing.Point(0, 0);
-            this.panel17.Margin = new System.Windows.Forms.Padding(5);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(947, 39);
+            this.panel17.Size = new System.Drawing.Size(829, 29);
             this.panel17.TabIndex = 44;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Location = new System.Drawing.Point(27, 104);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Location = new System.Drawing.Point(24, 78);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(920, 1);
+            this.panel1.Size = new System.Drawing.Size(805, 1);
             this.panel1.TabIndex = 93;
             // 
             // dataGridView1
@@ -109,10 +110,12 @@ namespace desktopv2
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 35;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ContaNum,
             this.Banco,
             this.Conta,
-            this.Descrição,
-            this.Change});
+            this.Data,
+            this.Valor,
+            this.Detalhe});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -123,8 +126,8 @@ namespace desktopv2
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 191);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
+            this.dataGridView1.Location = new System.Drawing.Point(24, 143);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -134,15 +137,16 @@ namespace desktopv2
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(920, 553);
+            this.dataGridView1.Size = new System.Drawing.Size(805, 415);
             this.dataGridView1.TabIndex = 100;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(65, 158);
+            this.pictureBox2.Location = new System.Drawing.Point(57, 118);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox2.Size = new System.Drawing.Size(22, 19);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 102;
             this.pictureBox2.TabStop = false;
@@ -150,12 +154,20 @@ namespace desktopv2
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 158);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 118);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.Size = new System.Drawing.Size(22, 19);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 101;
             this.pictureBox1.TabStop = false;
+            // 
+            // ContaNum
+            // 
+            this.ContaNum.HeaderText = "No de Conta";
+            this.ContaNum.MinimumWidth = 6;
+            this.ContaNum.Name = "ContaNum";
+            this.ContaNum.Width = 125;
             // 
             // Banco
             // 
@@ -166,31 +178,34 @@ namespace desktopv2
             // 
             // Conta
             // 
-            this.Conta.HeaderText = "Tipo de conta";
+            this.Conta.HeaderText = "Identificação";
             this.Conta.MinimumWidth = 6;
             this.Conta.Name = "Conta";
             this.Conta.Width = 125;
             // 
-            // Descrição
+            // Data
             // 
-            this.Descrição.HeaderText = "Descrição";
-            this.Descrição.MinimumWidth = 6;
-            this.Descrição.Name = "Descrição";
-            this.Descrição.Width = 125;
+            this.Data.HeaderText = "Data";
+            this.Data.MinimumWidth = 6;
+            this.Data.Name = "Data";
+            this.Data.Width = 125;
             // 
-            // Change
+            // Valor
             // 
-            this.Change.HeaderText = " ";
-            this.Change.MinimumWidth = 6;
-            this.Change.Name = "Change";
-            this.Change.Width = 125;
+            this.Valor.HeaderText = "Valor";
+            this.Valor.Name = "Valor";
+            // 
+            // Detalhe
+            // 
+            this.Detalhe.HeaderText = "Detalhe";
+            this.Detalhe.Name = "Detalhe";
             // 
             // IntegraçãoBancaria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(987, 843);
+            this.ClientSize = new System.Drawing.Size(864, 632);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
@@ -199,6 +214,7 @@ namespace desktopv2
             this.Controls.Add(this.moveToBack);
             this.Controls.Add(this.H1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "IntegraçãoBancaria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -217,11 +233,13 @@ namespace desktopv2
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Banco;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Conta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descrição;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Change;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ContaNum;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Banco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Conta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Data;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Detalhe;
     }
 }
