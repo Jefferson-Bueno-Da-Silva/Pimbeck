@@ -74,3 +74,4 @@ C:\Users\Dataflowbi\Desktop\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.
 C:\Users\Dataflowbi\Desktop\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.FluxoCaixa.resources
 C:\Users\Dataflowbi\Desktop\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.IntegraçãoBancaria.resources
 C:\Users\Dataflowbi\Desktop\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.MovimentaçãoEstoque.resources
+C:\Users\Dataflowbi\Desktop\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.EstoqueMinimo.resources

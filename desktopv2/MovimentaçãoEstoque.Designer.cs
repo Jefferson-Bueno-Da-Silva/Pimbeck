@@ -46,8 +46,9 @@ namespace desktopv2
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Medida = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Minimo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Maximo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fornecedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Qtd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -116,8 +117,9 @@ namespace desktopv2
             this.Nome,
             this.Categoria,
             this.Medida,
-            this.Minimo,
-            this.Maximo});
+            this.Fornecedor,
+            this.Qtd,
+            this.Valor});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -225,15 +227,20 @@ namespace desktopv2
             this.Medida.Name = "Medida";
             this.Medida.Width = 125;
             // 
-            // Minimo
+            // Fornecedor
             // 
-            this.Minimo.HeaderText = "Estoque Minimo";
-            this.Minimo.Name = "Minimo";
+            this.Fornecedor.HeaderText = "Fornecedor";
+            this.Fornecedor.Name = "Fornecedor";
             // 
-            // Maximo
+            // Qtd
             // 
-            this.Maximo.HeaderText = "Estoque Maximo";
-            this.Maximo.Name = "Maximo";
+            this.Qtd.HeaderText = "Qtd";
+            this.Qtd.Name = "Qtd";
+            // 
+            // Valor
+            // 
+            this.Valor.HeaderText = "Valor Total";
+            this.Valor.Name = "Valor";
             // 
             // MovimentaçãoEstoque
             // 
@@ -278,7 +285,8 @@ namespace desktopv2
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
         private System.Windows.Forms.DataGridViewTextBoxColumn Medida;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Minimo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Maximo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fornecedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Qtd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
     }
 }

@@ -35,6 +35,9 @@
     <Compile Update="DRE.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="EstoqueMinimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Financeiro.cs">
       <SubType>Form</SubType>
     </Compile>
