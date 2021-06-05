@@ -119,7 +119,7 @@ namespace desktopv2
             this.moveToBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.moveToBack.Image = ((System.Drawing.Image)(resources.GetObject("moveToBack.Image")));
             this.moveToBack.Location = new System.Drawing.Point(24, 29);
-            this.moveToBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.moveToBack.Margin = new System.Windows.Forms.Padding(4);
             this.moveToBack.Name = "moveToBack";
             this.moveToBack.Size = new System.Drawing.Size(26, 31);
             this.moveToBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -200,7 +200,7 @@ namespace desktopv2
             // panel17
             // 
             this.panel17.Location = new System.Drawing.Point(0, 0);
-            this.panel17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(865, 29);
             this.panel17.TabIndex = 61;
@@ -255,6 +255,7 @@ namespace desktopv2
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(243, 23);
             this.comboBox1.TabIndex = 95;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // dateTimePicker2
             // 
