@@ -35,19 +35,19 @@ namespace desktopv2
             this.panel17 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.AddEmployee = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.AddEmployee = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -64,7 +64,7 @@ namespace desktopv2
             this.H1.Size = new System.Drawing.Size(232, 32);
             this.H1.TabIndex = 4;
             this.H1.Text = "Estoque de destino";
-            this.H1.Click += new System.EventHandler(this.H1_Click);
+
             // 
             // moveToBack
             // 
@@ -79,6 +79,7 @@ namespace desktopv2
             this.moveToBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.moveToBack.TabIndex = 5;
             this.moveToBack.TabStop = false;
+            this.moveToBack.Click += new System.EventHandler(this.moveToBack_Click);
             // 
             // panel17
             // 
@@ -87,6 +88,8 @@ namespace desktopv2
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(829, 29);
             this.panel17.TabIndex = 44;
+            this.panel17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseDown);
+            this.panel17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseMove);
             // 
             // panel1
             // 
@@ -118,102 +121,52 @@ namespace desktopv2
             this.groupBox1.TabIndex = 94;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Origem de tranferencia";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+
             // 
-            // label4
+            // AddEmployee
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label4.Location = new System.Drawing.Point(471, 34);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 15);
-            this.label4.TabIndex = 97;
-            this.label4.Text = "Qtd:";
+            this.AddEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddEmployee.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.AddEmployee.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddEmployee.FlatAppearance.BorderSize = 0;
+            this.AddEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddEmployee.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AddEmployee.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.AddEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AddEmployee.Location = new System.Drawing.Point(206, 195);
+            this.AddEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AddEmployee.Name = "AddEmployee";
+            this.AddEmployee.Size = new System.Drawing.Size(404, 44);
+            this.AddEmployee.TabIndex = 107;
+            this.AddEmployee.Text = "Transferir";
+            this.AddEmployee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.AddEmployee.UseVisualStyleBackColor = false;
             // 
-            // label3
+            // textBox3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label3.Location = new System.Drawing.Point(17, 74);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 15);
-            this.label3.TabIndex = 96;
-            this.label3.Text = "Nome de Produto:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3.Location = new System.Drawing.Point(129, 116);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(243, 36);
+            this.textBox3.TabIndex = 105;
+
             // 
-            // textBox1
+            // label6
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(129, 74);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(243, 36);
-            this.textBox1.TabIndex = 95;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.numericUpDown1.ForeColor = System.Drawing.SystemColors.Info;
-            this.numericUpDown1.Location = new System.Drawing.Point(508, 32);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(243, 23);
-            this.numericUpDown1.TabIndex = 98;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label1.Location = new System.Drawing.Point(451, 71);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 15);
-            this.label1.TabIndex = 99;
-            this.label1.Text = "Origem:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(129, 34);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(243, 36);
-            this.textBox2.TabIndex = 100;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label2.Location = new System.Drawing.Point(73, 34);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 15);
-            this.label2.TabIndex = 101;
-            this.label2.Text = "Codigo:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.Info;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Setor 1",
-            "Setor 2"});
-            this.comboBox1.Location = new System.Drawing.Point(508, 71);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(243, 23);
-            this.comboBox1.TabIndex = 102;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label6.Location = new System.Drawing.Point(61, 116);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 15);
+            this.label6.TabIndex = 106;
+            this.label6.Text = "Categoria:";
+
             // 
             // comboBox2
             // 
@@ -241,50 +194,100 @@ namespace desktopv2
             this.label5.TabIndex = 103;
             this.label5.Text = "Destino:";
             // 
-            // textBox3
+            // comboBox1
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(129, 116);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(243, 36);
-            this.textBox3.TabIndex = 105;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.Info;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Setor 1",
+            "Setor 2"});
+            this.comboBox1.Location = new System.Drawing.Point(508, 71);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(243, 23);
+            this.comboBox1.TabIndex = 102;
             // 
-            // label6
+            // label2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label6.Location = new System.Drawing.Point(61, 116);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 15);
-            this.label6.TabIndex = 106;
-            this.label6.Text = "Categoria:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label2.Location = new System.Drawing.Point(73, 34);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 15);
+            this.label2.TabIndex = 101;
+            this.label2.Text = "Codigo:";
+
             // 
-            // AddEmployee
+            // textBox2
             // 
-            this.AddEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddEmployee.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.AddEmployee.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddEmployee.FlatAppearance.BorderSize = 0;
-            this.AddEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddEmployee.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.AddEmployee.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.AddEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AddEmployee.Location = new System.Drawing.Point(206, 195);
-            this.AddEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.AddEmployee.Name = "AddEmployee";
-            this.AddEmployee.Size = new System.Drawing.Size(404, 44);
-            this.AddEmployee.TabIndex = 107;
-            this.AddEmployee.Text = "Transferir";
-            this.AddEmployee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.AddEmployee.UseVisualStyleBackColor = false;
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Location = new System.Drawing.Point(129, 34);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(243, 36);
+            this.textBox2.TabIndex = 100;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label1.Location = new System.Drawing.Point(451, 71);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 15);
+            this.label1.TabIndex = 99;
+            this.label1.Text = "Origem:";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.numericUpDown1.ForeColor = System.Drawing.SystemColors.Info;
+            this.numericUpDown1.Location = new System.Drawing.Point(508, 32);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(243, 23);
+            this.numericUpDown1.TabIndex = 98;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(129, 74);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(243, 36);
+            this.textBox1.TabIndex = 95;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label4.Location = new System.Drawing.Point(471, 34);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(30, 15);
+            this.label4.TabIndex = 97;
+            this.label4.Text = "Qtd:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label3.Location = new System.Drawing.Point(17, 74);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 15);
+            this.label3.TabIndex = 96;
+            this.label3.Text = "Nome de Produto:";
+
             // 
             // TranferenciaEstoque
             // 
