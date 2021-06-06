@@ -38,6 +38,10 @@ namespace desktopv2
             this.Close();
         }
 
+        private void button4_Click(object sender, EventArgs e) => new MovimentaçãoEstoque().Show();
+
+        private void button3_Click(object sender, EventArgs e) => new TranferenciaEstoque().Show();
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.openFileDialog1 = new OpenFileDialog();
@@ -59,5 +63,7 @@ namespace desktopv2
             this.openFileDialog1.InitialDirectory = "Documentos";
             openFileDialog1.ShowDialog();
         }
+
+        private void button5_Click(object sender, EventArgs e) => new EstoqueMinimo().Show();
     }
 }

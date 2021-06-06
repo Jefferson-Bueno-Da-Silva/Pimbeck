@@ -53,6 +53,8 @@ namespace desktopv2
 
         private void AlmoxarifadoBtn_Click(object sender, EventArgs e) => new Almoxarifado().Show();
 
+        private void FinanceiroBtn_Click(object sender, EventArgs e) => new Financeiro().Show();
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
