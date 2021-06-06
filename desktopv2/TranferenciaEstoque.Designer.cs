@@ -63,13 +63,9 @@ namespace desktopv2
             this.H1.Name = "H1";
             this.H1.Size = new System.Drawing.Size(326, 41);
             this.H1.TabIndex = 4;
-<<<<<<< HEAD
             this.H1.Text = "Transferencia Estoque";
-            this.H1.Click += new System.EventHandler(this.H1_Click);
-=======
             this.H1.Text = "Estoque de destino";
 
->>>>>>> 8de50a42dcace96ddc681290a69b2c09fac3661c
             // 
             // moveToBack
             // 
@@ -129,8 +125,6 @@ namespace desktopv2
             this.groupBox1.TabIndex = 94;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Origem de tranferencia";
-<<<<<<< HEAD
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // AddEmployee
             // 
@@ -160,7 +154,6 @@ namespace desktopv2
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(277, 47);
             this.textBox3.TabIndex = 105;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label6
             // 
@@ -173,7 +166,6 @@ namespace desktopv2
             this.label6.Size = new System.Drawing.Size(77, 20);
             this.label6.TabIndex = 106;
             this.label6.Text = "Categoria:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // comboBox2
             // 
@@ -216,7 +208,6 @@ namespace desktopv2
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(277, 28);
             this.comboBox1.TabIndex = 102;
-=======
 
             // 
             // AddEmployee
@@ -238,11 +229,9 @@ namespace desktopv2
             this.AddEmployee.Text = "Transferir";
             this.AddEmployee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.AddEmployee.UseVisualStyleBackColor = false;
->>>>>>> 8de50a42dcace96ddc681290a69b2c09fac3661c
             // 
             // textBox3
             // 
-<<<<<<< HEAD
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
@@ -252,7 +241,6 @@ namespace desktopv2
             this.label2.Size = new System.Drawing.Size(61, 20);
             this.label2.TabIndex = 101;
             this.label2.Text = "Codigo:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox2
             // 
@@ -263,7 +251,6 @@ namespace desktopv2
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(277, 47);
             this.textBox2.TabIndex = 100;
-=======
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Location = new System.Drawing.Point(129, 116);
@@ -286,7 +273,6 @@ namespace desktopv2
             this.label6.TabIndex = 106;
             this.label6.Text = "Categoria:";
 
->>>>>>> 8de50a42dcace96ddc681290a69b2c09fac3661c
             // 
             // label1
             // 
@@ -310,7 +296,6 @@ namespace desktopv2
             this.numericUpDown1.Size = new System.Drawing.Size(278, 27);
             this.numericUpDown1.TabIndex = 98;
             // 
-<<<<<<< HEAD
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -344,8 +329,6 @@ namespace desktopv2
             this.label3.Size = new System.Drawing.Size(131, 20);
             this.label3.TabIndex = 96;
             this.label3.Text = "Nome de Produto:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-=======
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -440,7 +423,6 @@ namespace desktopv2
             this.label3.TabIndex = 96;
             this.label3.Text = "Nome de Produto:";
 
->>>>>>> 8de50a42dcace96ddc681290a69b2c09fac3661c
             // 
             // TranferenciaEstoque
             // 

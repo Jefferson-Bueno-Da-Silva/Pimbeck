@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "O3Z9/SIjz1Nf8rdCTKuUekkZOxHf2zkMlQDKhwM50Pb4MiCM1sE6OIxLWqeqVN1sFWx4jE5lV64qxFiECyRxCA==",
+  "dgSpecHash": "fzViuV0GQHp8YT9LQ9JspPHvWAydRFpzyAVE67HVF9IZn+oE6qSoK0sjIiwORuyqHn0Xa0DfatXIV0NAu8Y83g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj",
-=======
-  "dgSpecHash": "0t+IoIIR7oukOK/Ltdrp2+22r3EdjAIKrdUbhIiJsgFJIRTV2bel2AcDUvCCRPwnJJ6zmUYNvvwk+o8hPKPkXg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\jeffe\\Pimbeck\\desktopv2\\desktopv2.csproj",
->>>>>>> 8de50a42dcace96ddc681290a69b2c09fac3661c
+  "projectFilePath": "C:\\Users\\jeffe\\Pimbeck\\Pimbeck\\desktopv2\\desktopv2.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

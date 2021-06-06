@@ -34,7 +34,6 @@ namespace desktopv2
             this.moveToBack = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel17 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).BeginInit();
@@ -99,21 +98,6 @@ namespace desktopv2
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(57, 338);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(740, 44);
-            this.button3.TabIndex = 42;
-            this.button3.Text = "Emitir SPED";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // panel17
             // 
             this.panel17.Location = new System.Drawing.Point(0, 0);
@@ -148,7 +132,6 @@ namespace desktopv2
             this.ClientSize = new System.Drawing.Size(864, 461);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel17);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.moveToBack);
@@ -169,7 +152,6 @@ namespace desktopv2
         private System.Windows.Forms.PictureBox moveToBack;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Button button4;
     }
