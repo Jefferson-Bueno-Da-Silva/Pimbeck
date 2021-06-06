@@ -202,6 +202,7 @@ namespace desktopv2
             this.FinanceiroBtn.TabIndex = 8;
             this.FinanceiroBtn.Text = "Financeiro";
             this.FinanceiroBtn.UseVisualStyleBackColor = true;
+            this.FinanceiroBtn.Click += new System.EventHandler(this.FinanceiroBtn_Click);
             // 
             // ReservasBtn
             // 

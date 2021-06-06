@@ -49,6 +49,8 @@ namespace desktopv2
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(857, 29);
             this.panel17.TabIndex = 2;
+            this.panel17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseDown);
+            this.panel17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseMove);
             // 
             // moveToBack
             // 
@@ -63,6 +65,7 @@ namespace desktopv2
             this.moveToBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.moveToBack.TabIndex = 7;
             this.moveToBack.TabStop = false;
+            this.moveToBack.Click += new System.EventHandler(this.moveToBack_Click);
             // 
             // H1
             // 
@@ -87,6 +90,7 @@ namespace desktopv2
             this.ContasReceber.TabIndex = 8;
             this.ContasReceber.Text = "Contas a receber";
             this.ContasReceber.UseVisualStyleBackColor = true;
+            this.ContasReceber.Click += new System.EventHandler(this.ContasReceber_Click);
             // 
             // button1
             // 
@@ -98,6 +102,7 @@ namespace desktopv2
             this.button1.TabIndex = 9;
             this.button1.Text = "Contas a pagar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -109,6 +114,7 @@ namespace desktopv2
             this.button2.TabIndex = 10;
             this.button2.Text = "Boletos";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -120,6 +126,7 @@ namespace desktopv2
             this.button3.TabIndex = 13;
             this.button3.Text = "Integração Bancaria";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -131,6 +138,7 @@ namespace desktopv2
             this.button4.TabIndex = 12;
             this.button4.Text = "Fluxo de caixa";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -142,6 +150,7 @@ namespace desktopv2
             this.button5.TabIndex = 11;
             this.button5.Text = "Demonstrativo de resultados";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Financeiro
             // 
