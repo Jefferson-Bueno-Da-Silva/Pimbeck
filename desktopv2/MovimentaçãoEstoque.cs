@@ -10,34 +10,32 @@ namespace desktopv2
 {
     public partial class MovimentaçãoEstoque : Form
     {
+        int X = 0;
+        int Y = 0;
         public MovimentaçãoEstoque()
         {
             InitializeComponent();
+            this.MouseDown += new MouseEventHandler(panel17_MouseDown);
+            this.MouseMove += new MouseEventHandler(panel17_MouseMove);
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void panel17_MouseDown(object sender, MouseEventArgs e)
         {
-
+            if (e.Button != MouseButtons.Left) return;
+            X = this.Left - MousePosition.X;
+            Y = this.Top - MousePosition.Y;
         }
 
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void panel17_MouseMove(object sender, MouseEventArgs e)
         {
-
+            if (e.Button != MouseButtons.Left) return;
+            this.Left = X + MousePosition.X;
+            this.Top = Y + MousePosition.Y;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void moveToBack_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged_2(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

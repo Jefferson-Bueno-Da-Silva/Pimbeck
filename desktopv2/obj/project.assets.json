@@ -8,23 +8,39 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\jeffe\\.nuget\\packages\\": {},
+>>>>>>> 8de50a42dcace96ddc681290a69b2c09fac3661c
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj",
       "projectName": "desktopv2",
       "projectPath": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\desktopv2.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Usuario\\OneDrive\\Pulpit\\ADS\\PIM_III\\Pimbeck\\desktopv2\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\jeffe\\Pimbeck\\desktopv2\\desktopv2.csproj",
+      "projectName": "desktopv2",
+      "projectPath": "C:\\Users\\jeffe\\Pimbeck\\desktopv2\\desktopv2.csproj",
+      "packagesPath": "C:\\Users\\jeffe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jeffe\\Pimbeck\\desktopv2\\obj\\",
+>>>>>>> 8de50a42dcace96ddc681290a69b2c09fac3661c
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\jeffe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 8de50a42dcace96ddc681290a69b2c09fac3661c
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

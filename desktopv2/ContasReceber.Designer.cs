@@ -32,10 +32,10 @@ namespace desktopv2
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContasReceber));
             this.H1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.moveToBack = new System.Windows.Forms.PictureBox();
-            this.panel17 = new System.Windows.Forms.Panel();
             this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.moveToBack = new System.Windows.Forms.PictureBox();
+            this.panel17 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,7 +54,6 @@ namespace desktopv2
             this.H1.Size = new System.Drawing.Size(210, 32);
             this.H1.TabIndex = 4;
             this.H1.Text = "Contas a Receber";
-            this.H1.Click += new System.EventHandler(this.H1_Click);
             // 
             // dataGridView1
             // 
@@ -72,28 +71,6 @@ namespace desktopv2
             this.dataGridView1.Size = new System.Drawing.Size(805, 449);
             this.dataGridView1.TabIndex = 39;
             // 
-            // moveToBack
-            // 
-            this.moveToBack.BackColor = System.Drawing.Color.Transparent;
-            this.moveToBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.moveToBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.moveToBack.Image = ((System.Drawing.Image)(resources.GetObject("moveToBack.Image")));
-            this.moveToBack.Location = new System.Drawing.Point(24, 29);
-            this.moveToBack.Margin = new System.Windows.Forms.Padding(4);
-            this.moveToBack.Name = "moveToBack";
-            this.moveToBack.Size = new System.Drawing.Size(26, 32);
-            this.moveToBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.moveToBack.TabIndex = 5;
-            this.moveToBack.TabStop = false;
-            // 
-            // panel17
-            // 
-            this.panel17.Location = new System.Drawing.Point(0, 0);
-            this.panel17.Margin = new System.Windows.Forms.Padding(4);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(829, 29);
-            this.panel17.TabIndex = 44;
-            // 
             // Data
             // 
             this.Data.HeaderText = "Data";
@@ -107,6 +84,31 @@ namespace desktopv2
             this.Valor.MinimumWidth = 6;
             this.Valor.Name = "Valor";
             this.Valor.Width = 125;
+            // 
+            // moveToBack
+            // 
+            this.moveToBack.BackColor = System.Drawing.Color.Transparent;
+            this.moveToBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.moveToBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.moveToBack.Image = ((System.Drawing.Image)(resources.GetObject("moveToBack.Image")));
+            this.moveToBack.Location = new System.Drawing.Point(24, 29);
+            this.moveToBack.Margin = new System.Windows.Forms.Padding(4);
+            this.moveToBack.Name = "moveToBack";
+            this.moveToBack.Size = new System.Drawing.Size(26, 32);
+            this.moveToBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.moveToBack.TabIndex = 5;
+            this.moveToBack.TabStop = false;
+            this.moveToBack.MouseClick += new System.Windows.Forms.MouseEventHandler(this.moveToBack_Click);
+            // 
+            // panel17
+            // 
+            this.panel17.Location = new System.Drawing.Point(0, 0);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(829, 29);
+            this.panel17.TabIndex = 44;
+            this.panel17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseDown);
+            this.panel17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseMove);
             // 
             // label3
             // 
@@ -138,7 +140,6 @@ namespace desktopv2
             this.label1.Size = new System.Drawing.Size(91, 21);
             this.label1.TabIndex = 94;
             this.label1.Text = "7064,25 R$";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ContasReceber
             // 
