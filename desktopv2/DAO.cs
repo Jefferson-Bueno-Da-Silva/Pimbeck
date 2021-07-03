@@ -22,5 +22,7 @@ namespace desktopv2
                     Port,
                     Password
                 );
+
+        public NpgsqlConnection pgsqlConnection = null;
     }
 }
