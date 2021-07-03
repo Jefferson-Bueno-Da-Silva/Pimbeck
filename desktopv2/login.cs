@@ -18,6 +18,7 @@ namespace desktopv2
             InitializeComponent();
             this.MouseDown += new MouseEventHandler(Login__MouseDown);
             this.MouseMove += new MouseEventHandler(Login_MouseMove);
+            new DAO().Get();
         }
 
         private void Login__MouseDown(object sender, MouseEventArgs e)

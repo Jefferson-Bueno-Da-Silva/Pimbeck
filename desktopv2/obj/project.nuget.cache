@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "fzViuV0GQHp8YT9LQ9JspPHvWAydRFpzyAVE67HVF9IZn+oE6qSoK0sjIiwORuyqHn0Xa0DfatXIV0NAu8Y83g==",
+  "dgSpecHash": "o6KjAjwMCsWu/hGnhYlQA51lc7Q0PHWMMmXUlDBYc0w0qzGw1bmX1r4tHkFaT9jEOH55EJtHoHPhE9jQayqn7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jeffe\\Pimbeck\\Pimbeck\\desktopv2\\desktopv2.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Emily\\Pimbeck\\desktopv2\\desktopv2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Emily\\.nuget\\packages\\npgsql\\5.0.7\\npgsql.5.0.7.nupkg.sha512",
+    "C:\\Users\\Emily\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
   "logs": []
 }
