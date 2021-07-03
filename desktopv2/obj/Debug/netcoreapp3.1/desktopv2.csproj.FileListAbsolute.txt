@@ -42,3 +42,5 @@ C:\Users\jeffe\Pimbeck\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.dll
 C:\Users\jeffe\Pimbeck\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.pdb
 C:\Users\jeffe\Pimbeck\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.genruntimeconfig.cache
 C:\Users\jeffe\Pimbeck\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.csprojAssemblyReference.cache
+C:\Users\jeffe\Pimbeck\Pimbeck\desktopv2\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\jeffe\Pimbeck\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.csproj.CopyComplete

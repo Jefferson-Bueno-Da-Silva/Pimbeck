@@ -18,7 +18,6 @@ namespace desktopv2
             InitializeComponent();
             this.MouseDown += new MouseEventHandler(Login__MouseDown);
             this.MouseMove += new MouseEventHandler(Login_MouseMove);
-            new DAO().Get();
         }
 
         private void Login__MouseDown(object sender, MouseEventArgs e)
@@ -44,6 +43,12 @@ namespace desktopv2
             recepcao recep = new recepcao();
             recep.Show();
             this.Hide();
+        }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+            
+            this.label2.Text = new FuncionarioDB().Get();
         }
     }
 }
