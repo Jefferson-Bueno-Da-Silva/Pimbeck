@@ -44,5 +44,11 @@ namespace desktopv2
             recep.Show();
             this.Hide();
         }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+            
+            this.label2.Text = new FuncionarioDB().Get();
+        }
     }
 }
