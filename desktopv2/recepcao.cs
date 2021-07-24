@@ -49,10 +49,25 @@ namespace desktopv2
 
         private void ClientesBtn_Click(object sender, EventArgs e) => new Clientes().Show();
 
+        private void button2_Click(object sender, EventArgs e) => new Usuarios().Show();
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
             new login().Show();
+        }
+
+        private void recepcao_Load(object sender, EventArgs e)
+        {
+            get();
+        }
+
+        private void get()
+        {
+            string cmdSeleciona = String.Format("select * from clientes order by nome_cliente");
+            DataTable values = new DB().GetAll(cmdSeleciona);
+            dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader);
+            dataGridView1.DataSource = values;
         }
     }
 }

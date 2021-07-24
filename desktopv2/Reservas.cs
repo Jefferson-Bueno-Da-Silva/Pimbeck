@@ -70,5 +70,23 @@ namespace desktopv2
             this.Left = X + MousePosition.X;
             this.Top = Y + MousePosition.Y;
         }
+
+        private void Reservas_Load(object sender, EventArgs e)
+        {
+            get();
+        }
+
+        private void get()
+        {
+            string cmdSeleciona = String.Format("Select * from reservas order by data_saida");
+            DataTable values = new DB().GetAll(cmdSeleciona);
+            dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader);
+            dataGridView1.DataSource = values;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            get();
+        }
     }
 }

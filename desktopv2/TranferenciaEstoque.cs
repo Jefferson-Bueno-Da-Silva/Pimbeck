@@ -37,5 +37,46 @@ namespace desktopv2
         {
             this.Close();
         }
+
+        private void TranferenciaEstoque_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                //salvar departamento
+                this.comboBox.Items.Add("Estoque de antecipação");
+                this.comboBox.Items.Add("estoque minimo");
+                this.comboBox.Items.Add("estoque cozinha");
+                this.comboBox.Items.Add("estoque quarto");
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        private void AddEmployee_Click(object sender, EventArgs e)
+        {
+            var tipo = 0;
+
+            if (comboBox.SelectedItem.ToString() == "Estoque de antecipação") tipo = 1;
+            if (comboBox.SelectedItem.ToString() == "estoque minimo") tipo = 2;
+            if (comboBox.SelectedItem.ToString() == "estoque cozinha") tipo = 3;
+            if (comboBox.SelectedItem.ToString() == "estoque quarto") tipo = 4;
+
+            string cmdInserir = String.Format(
+                "UPDATE estoque SET id_tipo_estoque = {0} WHERE id_item_estoque = {1}",
+                tipo,
+                Int32.Parse(codigoTextBox.Text)
+            );
+
+            new DB().InserirRegistros(cmdInserir);
+
+            MessageBox.Show(
+                "Operação realizaca com sucesso!",
+                "Sucesso!",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
     }
 }
