@@ -38,9 +38,24 @@ namespace desktopv2
             this.Close();
         }
 
-        private void AddEmployee_Click(object sender, EventArgs e)
+        private void get()
         {
-            new ClientesAdicionar().Show();
+            string cmdSeleciona = String.Format("select * from clientes order by nome_cliente");
+            DataTable values = new DB().GetAll(cmdSeleciona);
+            dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader);
+            dataGridView1.DataSource = values;
+        }
+
+        private void Clientes_Load(object sender, EventArgs e)
+        {
+            get();
+        }
+
+        private void AddEmployee_Click(object sender, EventArgs e) => new ClientesAdicionar().Show();
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            get();
         }
     }
 }

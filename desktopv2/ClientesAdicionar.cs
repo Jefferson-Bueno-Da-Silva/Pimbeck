@@ -40,22 +40,30 @@ namespace desktopv2
 
         private void AddEmployee_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show(
-                "Tem certeza que deseja realizar esta operação ?",
-                "Tem certeza ?",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question
+            Random randNum = new Random();
+
+            string cmdInserir = String.Format(
+                "Insert Into clientes(id_cliente, nome_cliente, sobrenome_cliente, cpf_cliente, email_cliente, telefone_cliente, rg_cliente) " +
+                "values({0},'{1}','{2}','{3}','{4}','{5}', '{6}')",
+                randNum.Next(),
+                this.NomeTextBox.Text,
+                this.SobrenomeTextBox.Text,
+                this.CPFTextBox.Text,
+                this.emailTextBox.Text,
+                this.telefoneTextBox.Text,
+                this.RGTextBox.Text
             );
-            if (result == DialogResult.Yes)
-            {
-                MessageBox.Show(
-                    "Operação realizaca com sucesso!",
-                    "Sucesso!", 
-                    MessageBoxButtons.OK, 
-                    MessageBoxIcon.Information 
-                );
-                this.Close();
-            }
+
+            new DB().InserirRegistros(cmdInserir);
+
+            MessageBox.Show(
+                "Operação realizaca com sucesso!",
+                "Sucesso!",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+
+            this.Close();
         }
     }
 }
