@@ -42,7 +42,10 @@ namespace desktopv2
             this.label1 = new System.Windows.Forms.Label();
             this.SobrenomeTextBox = new System.Windows.Forms.TextBox();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.isUser = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.telefoneTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moveToBack)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +54,7 @@ namespace desktopv2
             // 
             this.NomeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.NomeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NomeTextBox.Location = new System.Drawing.Point(454, 159);
+            this.NomeTextBox.Location = new System.Drawing.Point(454, 136);
             this.NomeTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NomeTextBox.Multiline = true;
             this.NomeTextBox.Name = "NomeTextBox";
@@ -63,7 +66,7 @@ namespace desktopv2
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label3.Location = new System.Drawing.Point(367, 159);
+            this.label3.Location = new System.Drawing.Point(367, 145);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 15);
@@ -75,7 +78,7 @@ namespace desktopv2
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label4.Location = new System.Drawing.Point(367, 214);
+            this.label4.Location = new System.Drawing.Point(367, 184);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 15);
@@ -86,7 +89,7 @@ namespace desktopv2
             // 
             this.CPFTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.CPFTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CPFTextBox.Location = new System.Drawing.Point(454, 250);
+            this.CPFTextBox.Location = new System.Drawing.Point(454, 212);
             this.CPFTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CPFTextBox.Multiline = true;
             this.CPFTextBox.Name = "CPFTextBox";
@@ -98,7 +101,7 @@ namespace desktopv2
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label5.Location = new System.Drawing.Point(367, 297);
+            this.label5.Location = new System.Drawing.Point(367, 336);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(25, 15);
@@ -109,7 +112,7 @@ namespace desktopv2
             // 
             this.RGTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.RGTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.RGTextBox.Location = new System.Drawing.Point(454, 297);
+            this.RGTextBox.Location = new System.Drawing.Point(454, 326);
             this.RGTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RGTextBox.Multiline = true;
             this.RGTextBox.Name = "RGTextBox";
@@ -136,7 +139,7 @@ namespace desktopv2
             this.AddEmployee.Name = "AddEmployee";
             this.AddEmployee.Size = new System.Drawing.Size(501, 44);
             this.AddEmployee.TabIndex = 39;
-            this.AddEmployee.Text = "Adicionar Funcionario";
+            this.AddEmployee.Text = "Adicionar Cliente";
             this.AddEmployee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.AddEmployee.UseVisualStyleBackColor = true;
             this.AddEmployee.Click += new System.EventHandler(this.AddEmployee_Click);
@@ -161,7 +164,7 @@ namespace desktopv2
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label1.Location = new System.Drawing.Point(367, 250);
+            this.label1.Location = new System.Drawing.Point(367, 222);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 15);
@@ -172,7 +175,7 @@ namespace desktopv2
             // 
             this.SobrenomeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.SobrenomeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SobrenomeTextBox.Location = new System.Drawing.Point(454, 205);
+            this.SobrenomeTextBox.Location = new System.Drawing.Point(454, 174);
             this.SobrenomeTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SobrenomeTextBox.Multiline = true;
             this.SobrenomeTextBox.Name = "SobrenomeTextBox";
@@ -190,18 +193,51 @@ namespace desktopv2
             this.panel17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseDown);
             this.panel17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseMove);
             // 
-            // isUser
+            // label2
             // 
-            this.isUser.AutoSize = true;
-            this.isUser.ForeColor = System.Drawing.Color.White;
-            this.isUser.Location = new System.Drawing.Point(454, 358);
-            this.isUser.Name = "isUser";
-            this.isUser.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.isUser.Size = new System.Drawing.Size(142, 19);
-            this.isUser.TabIndex = 44;
-            this.isUser.Text = "? É usuario do sistema";
-            this.isUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.isUser.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label2.Location = new System.Drawing.Point(367, 259);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 15);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "Email:";
+            // 
+            // emailTextBox
+            // 
+            this.emailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.emailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.emailTextBox.Location = new System.Drawing.Point(454, 250);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.emailTextBox.Multiline = true;
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(228, 34);
+            this.emailTextBox.TabIndex = 44;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label6.Location = new System.Drawing.Point(367, 297);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 15);
+            this.label6.TabIndex = 47;
+            this.label6.Text = "Telefone:";
+            // 
+            // telefoneTextBox
+            // 
+            this.telefoneTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.telefoneTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.telefoneTextBox.Location = new System.Drawing.Point(454, 288);
+            this.telefoneTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.telefoneTextBox.Multiline = true;
+            this.telefoneTextBox.Name = "telefoneTextBox";
+            this.telefoneTextBox.Size = new System.Drawing.Size(228, 34);
+            this.telefoneTextBox.TabIndex = 46;
             // 
             // ClientesAdicionar
             // 
@@ -209,7 +245,10 @@ namespace desktopv2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(864, 591);
-            this.Controls.Add(this.isUser);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.telefoneTextBox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SobrenomeTextBox);
@@ -248,6 +287,9 @@ namespace desktopv2
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox SobrenomeTextBox;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.CheckBox isUser;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox telefoneTextBox;
     }
 }

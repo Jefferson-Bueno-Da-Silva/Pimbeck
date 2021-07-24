@@ -43,8 +43,6 @@ namespace desktopv2
 
         private void FuncionariosBtn_Click(object sender, EventArgs e) => new Funcionarios().Show();
 
-        private void ClientesBtn_Click(object sender, EventArgs e) => new Clientes().Show();
-
         private void ReservasBtn_Click(object sender, EventArgs e) => new Reservas().Show();
 
         private void DocumentosBtn_Click(object sender, EventArgs e) => new DocumentosFiscais().Show();
@@ -54,6 +52,8 @@ namespace desktopv2
         private void AlmoxarifadoBtn_Click(object sender, EventArgs e) => new Almoxarifado().Show();
 
         private void FinanceiroBtn_Click(object sender, EventArgs e) => new Financeiro().Show();
+
+        private void ClientesBtn_Click(object sender, EventArgs e) => new Clientes().Show();
 
         private void button1_Click(object sender, EventArgs e)
         {
