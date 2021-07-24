@@ -51,9 +51,9 @@ namespace desktopv2
             Random randNum = new Random();
 
 
-            new DB().InserirRegistros(
-                "funcionarios",
-                "id_funcionario, nome_funcionario, sobrenome_funcionario, cpf_funcionario, rg_funcionario, system_user",
+            string cmdInserir = String.Format(
+                "Insert Into funcionarios(id_funcionario, nome_funcionario, sobrenome_funcionario, cpf_funcionario, rg_funcionario, system_user) " + 
+                "values({0},'{1}','{2}','{3}','{4}',{5})",
                 randNum.Next(),
                 this.NomeTextBox.Text,
                 this.SobrenomeTextBox.Text,
@@ -61,6 +61,8 @@ namespace desktopv2
                 this.RGTextBox.Text,
                 user
             );
+
+            new DB().InserirRegistros(cmdInserir);
 
             MessageBox.Show(
                 "Operação realizaca com sucesso!",

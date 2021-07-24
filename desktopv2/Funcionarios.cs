@@ -45,7 +45,19 @@ namespace desktopv2
 
         private void Funcionarios_Load(object sender, EventArgs e)
         {
-            DataTable values = new DB().GetAll("funcionarios", "nome_funcionario");
+            get();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            get();
+        }
+
+
+        private void get()
+        {
+            string cmdSeleciona = String.Format("Select * from funcionarios order by nome_funcionario");
+            DataTable values = new DB().GetAll(cmdSeleciona);
             dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader);
             dataGridView1.DataSource = values;
         }
