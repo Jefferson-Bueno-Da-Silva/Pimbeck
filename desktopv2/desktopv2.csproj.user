@@ -89,5 +89,11 @@
     <Compile Update="TranferenciaEstoque.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UsuariosAdicionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

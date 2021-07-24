@@ -40,22 +40,28 @@ namespace desktopv2
 
         private void AddEmployee_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show(
-                "Tem certeza que deseja realizar esta operação ?",
-                "Tem certeza ?",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question
+            Random randNum = new Random();
+
+            string cmdInserir = String.Format(
+                "Insert Into reservas(id_reserva, data_entrada, data_saida, id_quarto, id_cliente, id_funcionario) "+
+                "values({0}, '{1}', '{2}', {3}, {4}, {5})",
+                randNum.Next(),
+                dateTimePicker1.Value.ToString("yyyy-MM-dd"),
+                dateTimePicker2.Value.ToString("yyyy-MM-dd"),
+                Int32.Parse(this.quartoTextBox.Text),
+                Int32.Parse(this.clienteTextBox.Text),
+                Int32.Parse(this.funcionarioTextBox.Text)
             );
-            if (result == DialogResult.Yes)
-            {
-                MessageBox.Show(
-                    "Operação realizaca com sucesso!",
-                    "Sucesso!",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information
-                );
-                this.Close();
-            }
+
+            new DB().InserirRegistros(cmdInserir);
+
+            MessageBox.Show(
+                 "Operação realizaca com sucesso!",
+                 "Sucesso!",
+                 MessageBoxButtons.OK,
+                 MessageBoxIcon.Information
+             );
+            this.Close();
         }
 
         private void printPreviewControl1_Click(object sender, EventArgs e)

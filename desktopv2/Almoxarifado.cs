@@ -38,8 +38,6 @@ namespace desktopv2
             this.Close();
         }
 
-        private void button4_Click(object sender, EventArgs e) => new MovimentaçãoEstoque().Show();
-
         private void button3_Click(object sender, EventArgs e) => new TranferenciaEstoque().Show();
 
         private void button1_Click(object sender, EventArgs e)
@@ -65,5 +63,23 @@ namespace desktopv2
         }
 
         private void button5_Click(object sender, EventArgs e) => new EstoqueMinimo().Show();
+
+        private void Almoxarifado_Load(object sender, EventArgs e)
+        {
+            get();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            get();
+        }
+
+        private void get()
+        {
+            string cmdSeleciona = String.Format("select * from estoque");
+            DataTable values = new DB().GetAll(cmdSeleciona);
+            dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader);
+            dataGridView1.DataSource = values;
+        }
     }
 }
