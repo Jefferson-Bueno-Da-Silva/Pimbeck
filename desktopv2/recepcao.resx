@@ -58,15 +58,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=4.0.2.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
-  <data name="DocumentosBtn.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAALJJREFUOE/tlQENwjAQRSsBCUhAAhKQhoNJQQISkHBtDcC/7hLK8a+tgP3kJU3z
-        76VL1i2JyKWUIuAdsCWk1rqhe9L1MBh4OYGnCW39nEq7wYheqIylXTHCC5VY6ooMJlS4lBQ9TYjhe875
-        0YO9W5P0IQIP5uRq9XmIIELfBk87/U+wyYaX0Mc2zTesuMoh3MOKqxzCPay4SiQcfa1n/F89XHz9Bei9
-        ZAMhejrMnk1jSekDLd9gUOtIgf8AAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -78,16 +69,6 @@
         CP4AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="MarketingBtn.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAQJJREFUOE/tVG0RwjAUq4RJQAISkICESZgDJICD4QAJSJmE7kMAJL10t37saOEv
-        ucttfS/J3q7dzK+w1jbLslymabLzPD9VrgeCTgxA0GtLtcuAkKOfJg7ylHQffCWwy02To2wp+EqY5grR
-        7jQ50njGzWpSnvHrWtI4BAVhW6thYlTeP7CcJj5fyvs+EMfmAN6w6EnlMTDY/VLKnkKHmiKe0eJw2UNg
-        4gZNF8IvRrV2HMePn58LiEGzBINKK9DrtgExJQsB051Nbpif0AN1P3kLnjH1w4eRkoVgyFYEDgjv9ety
-        a0kdoOfGdqRKKfh00E0aE/VWsnrAzKevG8KrWhkY8wb0l9ptgmZ5mgAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="AlmoxarifadoBtn.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -96,16 +77,6 @@
         7iHCHNgiB8WuFWzwweUlYLhAYETBTzbTRUBwrxU22E4XAVHXPaIR62a6EMKVC/KZ2gsyIkOcfOKlOcBs
         qCGRXF4CyWhshmeRy/8AujucSK+t8W2feblAr06OjOHlAr062ZTm6PTq0qbgUfyOEtR1Sr0B+l4ShLFr
         onsAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="FinanceiroBtn.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAPdJREFUOE/dkt0NwjAMhDMCG9ARGIER2ABGYAPYgG5AN2GEjsAIUX+kPpY741RW
-        SdoKeOpJVpKz/VVO45bKe3+tqqrXuKv9vVYObJrmVtf1gwHQgd5PQIJCM0AneisCovkeAk0b9WaBrMWa
-        236GM0V913XbpUD1dth74/dTQCmMAbmnR/FFBJ+RAnKkjI1jINaCZwqwi+1nRIFWAMi9KjwK05yMnwS2
-        bXtEUaZHuS/dfsDUftcYYKm+bXiiaK+2KAUbpMkSSRktdi/Ince5KIxCMgqDl2Mtwnn0lOQDUSVg9l7s
-        +2NO/vqk5kYJ0L/AgpAb/nhazr0AYAHBSgrWRRUAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="ReservasBtn.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -30,12 +30,9 @@ namespace desktopv2
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(recepcao));
-            this.DocumentosBtn = new System.Windows.Forms.Button();
             this.MenuPanel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.MarketingBtn = new System.Windows.Forms.Button();
             this.AlmoxarifadoBtn = new System.Windows.Forms.Button();
-            this.FinanceiroBtn = new System.Windows.Forms.Button();
             this.ReservasBtn = new System.Windows.Forms.Button();
             this.ClientesBtn = new System.Windows.Forms.Button();
             this.FuncionariosBtn = new System.Windows.Forms.Button();
@@ -98,31 +95,11 @@ namespace desktopv2
             this.panel16.SuspendLayout();
             this.SuspendLayout();
             // 
-            // DocumentosBtn
-            // 
-            this.DocumentosBtn.FlatAppearance.BorderSize = 0;
-            this.DocumentosBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DocumentosBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.DocumentosBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.DocumentosBtn.Image = ((System.Drawing.Image)(resources.GetObject("DocumentosBtn.Image")));
-            this.DocumentosBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DocumentosBtn.Location = new System.Drawing.Point(0, 407);
-            this.DocumentosBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.DocumentosBtn.Name = "DocumentosBtn";
-            this.DocumentosBtn.Size = new System.Drawing.Size(230, 40);
-            this.DocumentosBtn.TabIndex = 9;
-            this.DocumentosBtn.Text = "Documentos";
-            this.DocumentosBtn.UseVisualStyleBackColor = true;
-            this.DocumentosBtn.Click += new System.EventHandler(this.DocumentosBtn_Click);
-            // 
             // MenuPanel
             // 
             this.MenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.MenuPanel.Controls.Add(this.button1);
-            this.MenuPanel.Controls.Add(this.MarketingBtn);
             this.MenuPanel.Controls.Add(this.AlmoxarifadoBtn);
-            this.MenuPanel.Controls.Add(this.DocumentosBtn);
-            this.MenuPanel.Controls.Add(this.FinanceiroBtn);
             this.MenuPanel.Controls.Add(this.ReservasBtn);
             this.MenuPanel.Controls.Add(this.ClientesBtn);
             this.MenuPanel.Controls.Add(this.FuncionariosBtn);
@@ -144,7 +121,7 @@ namespace desktopv2
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 549);
+            this.button1.Location = new System.Drawing.Point(0, 405);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(230, 40);
@@ -152,23 +129,6 @@ namespace desktopv2
             this.button1.Text = "Sair";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // MarketingBtn
-            // 
-            this.MarketingBtn.FlatAppearance.BorderSize = 0;
-            this.MarketingBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MarketingBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MarketingBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.MarketingBtn.Image = ((System.Drawing.Image)(resources.GetObject("MarketingBtn.Image")));
-            this.MarketingBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MarketingBtn.Location = new System.Drawing.Point(0, 502);
-            this.MarketingBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MarketingBtn.Name = "MarketingBtn";
-            this.MarketingBtn.Size = new System.Drawing.Size(230, 40);
-            this.MarketingBtn.TabIndex = 11;
-            this.MarketingBtn.Text = "Marketing";
-            this.MarketingBtn.UseVisualStyleBackColor = true;
-            this.MarketingBtn.Click += new System.EventHandler(this.MarketingBtn_Click);
             // 
             // AlmoxarifadoBtn
             // 
@@ -178,7 +138,7 @@ namespace desktopv2
             this.AlmoxarifadoBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.AlmoxarifadoBtn.Image = ((System.Drawing.Image)(resources.GetObject("AlmoxarifadoBtn.Image")));
             this.AlmoxarifadoBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AlmoxarifadoBtn.Location = new System.Drawing.Point(0, 455);
+            this.AlmoxarifadoBtn.Location = new System.Drawing.Point(0, 359);
             this.AlmoxarifadoBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.AlmoxarifadoBtn.Name = "AlmoxarifadoBtn";
             this.AlmoxarifadoBtn.Size = new System.Drawing.Size(230, 40);
@@ -186,23 +146,6 @@ namespace desktopv2
             this.AlmoxarifadoBtn.Text = "Almoxarifado";
             this.AlmoxarifadoBtn.UseVisualStyleBackColor = true;
             this.AlmoxarifadoBtn.Click += new System.EventHandler(this.AlmoxarifadoBtn_Click);
-            // 
-            // FinanceiroBtn
-            // 
-            this.FinanceiroBtn.FlatAppearance.BorderSize = 0;
-            this.FinanceiroBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FinanceiroBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.FinanceiroBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.FinanceiroBtn.Image = ((System.Drawing.Image)(resources.GetObject("FinanceiroBtn.Image")));
-            this.FinanceiroBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.FinanceiroBtn.Location = new System.Drawing.Point(0, 360);
-            this.FinanceiroBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.FinanceiroBtn.Name = "FinanceiroBtn";
-            this.FinanceiroBtn.Size = new System.Drawing.Size(230, 40);
-            this.FinanceiroBtn.TabIndex = 8;
-            this.FinanceiroBtn.Text = "Financeiro";
-            this.FinanceiroBtn.UseVisualStyleBackColor = true;
-            this.FinanceiroBtn.Click += new System.EventHandler(this.FinanceiroBtn_Click);
             // 
             // ReservasBtn
             // 
@@ -785,8 +728,6 @@ namespace desktopv2
         private System.Windows.Forms.Button FuncionariosBtn;
         private System.Windows.Forms.Button ReservasBtn;
         private System.Windows.Forms.Button ClientesBtn;
-        private System.Windows.Forms.Button FinanceiroBtn;
-        private System.Windows.Forms.Button MarketingBtn;
         private System.Windows.Forms.Button AlmoxarifadoBtn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label H1;
@@ -819,7 +760,6 @@ namespace desktopv2
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button DocumentosBtn;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Button minimize;
         private System.Windows.Forms.Button close;

@@ -45,13 +45,7 @@ namespace desktopv2
 
         private void ReservasBtn_Click(object sender, EventArgs e) => new Reservas().Show();
 
-        private void DocumentosBtn_Click(object sender, EventArgs e) => new DocumentosFiscais().Show();
-
-        private void MarketingBtn_Click(object sender, EventArgs e) => new Marketing().Show();
-
         private void AlmoxarifadoBtn_Click(object sender, EventArgs e) => new Almoxarifado().Show();
-
-        private void FinanceiroBtn_Click(object sender, EventArgs e) => new Financeiro().Show();
 
         private void ClientesBtn_Click(object sender, EventArgs e) => new Clientes().Show();
 
