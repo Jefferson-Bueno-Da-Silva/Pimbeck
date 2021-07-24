@@ -37,22 +37,38 @@ namespace desktopv2
 
         private void AddEmployee_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show(
-                "Tem certeza que deseja realizar esta operação ?",
-                "Tem certeza ?",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question
-            );
-            if (result == DialogResult.Yes)
+            int user;
+            if (this.isUser.Enabled)
             {
-                MessageBox.Show(
-                    "Operação realizaca com sucesso!",
-                    "Sucesso!",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information
-                );
-                this.Close();
+                user = 1;
             }
+            else
+            {
+                user = 0;
+            }
+
+
+            Random randNum = new Random();
+
+
+            new DB().InserirRegistros(
+                "funcionarios",
+                "id_funcionario, nome_funcionario, sobrenome_funcionario, cpf_funcionario, rg_funcionario, system_user",
+                randNum.Next(),
+                this.NomeTextBox.Text,
+                this.SobrenomeTextBox.Text,
+                this.CPFTextBox.Text,
+                this.RGTextBox.Text,
+                user
+            );
+
+            MessageBox.Show(
+                "Operação realizaca com sucesso!",
+                "Sucesso!",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+            this.Close();
         }
     }
 }
