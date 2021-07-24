@@ -5,11 +5,13 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace desktopv2
 {
     public partial class Funcionarios : Form
     {
+
         int X = 0;
         int Y = 0;
         public Funcionarios()
@@ -39,6 +41,13 @@ namespace desktopv2
         {
             // adc funcionario
             new Form1().Show();
+        }
+
+        private void Funcionarios_Load(object sender, EventArgs e)
+        {
+            DataTable values = new DB().GetAll("funcionarios", "nome_funcionario");
+            dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader);
+            dataGridView1.DataSource = values;
         }
     }
 }
