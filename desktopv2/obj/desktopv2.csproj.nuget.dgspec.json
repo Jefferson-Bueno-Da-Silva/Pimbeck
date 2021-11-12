@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jeffe\\Pimbeck\\Pimbeck\\desktopv2\\desktopv2.csproj": {}
+    "D:\\PIM\\Pimbeck\\desktopv2\\desktopv2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jeffe\\Pimbeck\\Pimbeck\\desktopv2\\desktopv2.csproj": {
+    "D:\\PIM\\Pimbeck\\desktopv2\\desktopv2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeffe\\Pimbeck\\Pimbeck\\desktopv2\\desktopv2.csproj",
+        "projectUniqueName": "D:\\PIM\\Pimbeck\\desktopv2\\desktopv2.csproj",
         "projectName": "desktopv2",
-        "projectPath": "C:\\Users\\jeffe\\Pimbeck\\Pimbeck\\desktopv2\\desktopv2.csproj",
-        "packagesPath": "C:\\Users\\jeffe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeffe\\Pimbeck\\Pimbeck\\desktopv2\\obj\\",
+        "projectPath": "D:\\PIM\\Pimbeck\\desktopv2\\desktopv2.csproj",
+        "packagesPath": "C:\\Users\\Jeff\\.nuget\\packages\\",
+        "outputPath": "D:\\PIM\\Pimbeck\\desktopv2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jeffe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jeff\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,7 +42,7 @@
           "dependencies": {
             "Npgsql": {
               "target": "Package",
-              "version": "[5.0.7, )"
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -63,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -49,8 +49,6 @@ namespace desktopv2
 
         private void ClientesBtn_Click(object sender, EventArgs e) => new Clientes().Show();
 
-        private void button2_Click(object sender, EventArgs e) => new Usuarios().Show();
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
