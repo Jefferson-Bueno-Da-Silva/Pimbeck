@@ -93,5 +93,4 @@ D:\PIM\Pimbeck\desktopv2\bin\Debug\netcoreapp3.1\desktopv2.pdb
 D:\PIM\Pimbeck\desktopv2\bin\Debug\netcoreapp3.1\Npgsql.dll
 D:\PIM\Pimbeck\desktopv2\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 D:\PIM\Pimbeck\desktopv2\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
-D:\PIM\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.csproj.CopyComplete
 D:\PIM\Pimbeck\desktopv2\obj\Debug\netcoreapp3.1\desktopv2.genruntimeconfig.cache
