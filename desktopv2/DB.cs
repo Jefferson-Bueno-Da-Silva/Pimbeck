@@ -40,7 +40,6 @@ namespace desktopv2
             return dt;
         }
 
-
         //Inserir registros
         public void InserirRegistros( string SqlCommand )
         {

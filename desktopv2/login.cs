@@ -40,9 +40,30 @@ namespace desktopv2
 
         private void Entrar_Click(object sender, EventArgs e)
         {
-            recepcao recep = new recepcao();
-            recep.Show();
-            this.Hide();
+            if(String.IsNullOrEmpty(this.name.Text))
+            {
+                MessageBox.Show("Você PRECISA colocar um email válido!");
+                return;
+            }
+            
+            if(String.IsNullOrEmpty(this.pass.Text))
+            {
+                MessageBox.Show("Você PRECISA colocar uma senha válida!");
+                return;
+            }
+
+            AuthModel auth = new AuthModel();
+            Boolean isValid = auth.ValidateUser(this.name.Text, this.pass.Text);
+            if (isValid)
+            {
+                recepcao recep = new recepcao();
+                recep.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuario ou Senha INCORRETOS");
+            }
         }
     }
 }
