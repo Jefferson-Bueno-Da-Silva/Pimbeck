@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Pimbeck.Models.Quartos>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Quartos</h1>
+
+<p>
+    <a asp-action="Create"><img src="~/icons/plus.png" style="height: 11px; padding-bottom: 2px"> Adicionar quarto</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.numero_quarto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.qtd_pessoas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.id_categoria_quarto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.numero_quarto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.qtd_pessoas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_categoria_quarto)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id_quarto">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.id_quarto">Detalhas</a> |
+                <a asp-action="Delete" asp-route-id="@item.id_quarto">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

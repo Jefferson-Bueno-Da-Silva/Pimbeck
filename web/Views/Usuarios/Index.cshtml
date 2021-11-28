@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Pimbeck.Models.Usuarios>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Usuarios</h1>
+
+<p>
+    <a asp-action="Create"><img src="~/icons/plus.png" style="height: 11px; padding-bottom: 2px"> Adicionar usuario</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.email_usuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.senha_usuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.id_funcionario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.email_usuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.senha_usuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_funcionario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id_usuario">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.id_usuario">Detalhas</a> |
+                <a asp-action="Delete" asp-route-id="@item.id_usuario">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

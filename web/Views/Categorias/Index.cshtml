@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Pimbeck.Models.Categoria>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Categorias</h1>
+
+<p>
+    <a asp-action="Create"><img src="~/icons/plus.png" style="height: 11px; padding-bottom: 2px"> Adicionar categoria</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nome_categoria_quarto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.qtd_camas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.valor_categoria_quarto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome_categoria_quarto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.qtd_camas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.valor_categoria_quarto)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id_categoria_quarto">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.id_categoria_quarto">Detalhas</a> |
+                <a asp-action="Delete" asp-route-id="@item.id_categoria_quarto">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

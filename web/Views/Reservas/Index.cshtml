@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Pimbeck.Models.Reservas>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Reservas</h1>
+
+<p>
+    <a asp-action="Create"><img src="~/icons/plus.png" style="height: 11px; padding-bottom: 2px"> Adicionar reserva</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.data_entrada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.data_saida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.id_quarto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.id_cliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.id_funcionario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.id_user)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.checkin)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.data_entrada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.data_saida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_quarto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_cliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_funcionario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_user)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.checkin)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id_reserva">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.id_reserva">Detalhas</a> |
+                <a asp-action="Delete" asp-route-id="@item.id_reserva">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

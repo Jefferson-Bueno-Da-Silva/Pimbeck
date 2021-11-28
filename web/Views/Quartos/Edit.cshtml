@@ -1,0 +1,43 @@
+﻿@model Pimbeck.Models.Quartos
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Editar quarto</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="id_quarto" />
+            <div class="form-group">
+                <label asp-for="numero_quarto" class="control-label"></label>
+                <input asp-for="numero_quarto" class="form-control" />
+                <span asp-validation-for="numero_quarto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="qtd_pessoas" class="control-label"></label>
+                <input asp-for="qtd_pessoas" class="form-control" />
+                <span asp-validation-for="qtd_pessoas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="id_categoria_quarto" class="control-label"></label>
+                <input asp-for="id_categoria_quarto" class="form-control" />
+                <span asp-validation-for="id_categoria_quarto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

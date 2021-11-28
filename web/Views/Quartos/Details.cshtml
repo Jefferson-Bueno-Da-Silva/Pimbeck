@@ -1,0 +1,35 @@
+﻿@model Pimbeck.Models.Quartos
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detalhas de quarto</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.numero_quarto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.numero_quarto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.qtd_pessoas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.qtd_pessoas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.id_categoria_quarto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.id_categoria_quarto)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.id_quarto">Editar</a> |
+    <a asp-action="Index">Voltar</a>
+</div>
